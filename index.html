@@ -41,6 +41,8 @@
 
 
 
+  <link rel="alternate" href="/atom.xml" title="Tan Song' Blog" type="application/atom+xml" />
+
 
 
 
@@ -200,6 +202,95 @@
             
               
                 
+                <a class="post-title-link" href="/2016/03/14/HDU-5293/" itemprop="url">
+                  HDU 5293 Tree chain problem
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            发表于
+            <time itemprop="dateCreated" datetime="2016-03-14T23:16:47+08:00" content="2016-03-14">
+              2016-03-14
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/03/14/HDU-5293/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/14/HDU-5293/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <p>又是神奇的DP+DFS序(其实树链剖分也很方便啦</p>
+<p>题意：<br>给你一棵树，树上有n个点。<br>然后给你m条链，然后让你选择一些不相交的链，使得权值和最大。（每条链都有权值） </p>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/03/14/HDU-5293/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/03/14/HDU-5296/" itemprop="url">
                   HDU 5296 Annoying problem
                 </a>
@@ -243,22 +334,12 @@
 
       
         
-          <span itemprop="articleBody">
-            
-              <p>题意：<br>$n$个点构成的树，$q$个询问，要你维护一个集合，每个询问让你在集合中删除或者添加一个点，然后输出一个整数，为包含集合内所有点的最小生成树的大小</p>
-<p>官方题解：<br>先预处理下dfs序。</p>
-<p>对于添加点u操作：每次查找集合中的点与添加的点 dfs序比他小的最大的点，和比他大最小点，假设这两个点为x，y（查找不到的话就找字典序最大和最小的两个点，理由下面给出）</p>
-<p>每次增加的花费为<br>dis[u]−dis[lca(x,u)]−dis[lca(y,u)]+dis[lca(x,y)];<br>其中dis记得是点到根结点的距离 对于删除点u操作：每次先把点从集合中删除，然后再计算减少花费，计算公式和增加的计算方法一样。</p>
-<p>根据dfs序选择两个点的理由。</p>
-<p>如果集合中可以找到dfs序比操作点大和比操作点小的点，那么变化的费用就相当于， 操作点到 以这两个点为端点的链 的距离，可以用上述公式计算。</p>
-<p>如果集合中dfs序都比操作点小或者都比操作点大，那么变化的费用是操作点到以字典序最大和字典序最小的点 为端点的链的距离，也可以用上面的公式计算。</p>
-<p>感受：</p>
-<p>DFS序太强了。完全没有意识到DFS序可以处理链问题。我提到LCA相关，潘爷提到DFS序的时候我又凭感觉直接否定了DFS序。。。卡到结束…我有罪</p>
-<p>补得时候LCA自己又写错了…每次自己写LCA总有三分之二的概率要挂。。已经成为我写挂频率最高的算法了…</p>
-<figure class="highlight hsp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> &lt;bits/stdc++.h&gt;</span></span><br><span class="line">using namespace std<span class="comment">;</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> rep(i,a,b) for(int i=a;i&lt;=b;++i)</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> first F</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> second S</span></span><br><span class="line">typedef pair&lt;<span class="keyword">int</span>,<span class="keyword">int</span>&gt; pii<span class="comment">;</span></span><br><span class="line">const <span class="keyword">int</span> maxn = <span class="number">100100</span><span class="comment">;</span></span><br><span class="line"><span class="keyword">int</span> f[maxn][<span class="number">23</span>],n,q<span class="comment">;</span></span><br><span class="line">struct ed&#123;</span><br><span class="line">    <span class="keyword">int</span> v,w<span class="comment">;</span></span><br><span class="line">&#125;<span class="comment">;</span></span><br><span class="line">vector&lt;ed&gt; mp[maxn]<span class="comment">;</span></span><br><span class="line">inline void adde(<span class="keyword">int</span> u,<span class="keyword">int</span> v,<span class="keyword">int</span> w)&#123;</span><br><span class="line">    ed tmp<span class="comment">;</span></span><br><span class="line">    tmp.w = w<span class="comment">; tmp.v = v;</span></span><br><span class="line">    mp[u].push_back(tmp)<span class="comment">;</span></span><br><span class="line">    tmp.v = u<span class="comment">;</span></span><br><span class="line">    mp[v].push_back(tmp)<span class="comment">;</span></span><br><span class="line">&#125;</span><br><span class="line">set&lt;<span class="keyword">int</span>&gt; st<span class="comment">;</span></span><br><span class="line"><span class="keyword">int</span> dfscnt,dep[maxn],<span class="keyword">pos</span>[maxn],npos[maxn],dist[maxn]<span class="comment">;</span></span><br><span class="line">void dfs(<span class="keyword">int</span> u,<span class="keyword">int</span> fa)&#123;</span><br><span class="line">    f[u][<span class="number">0</span>] = fa<span class="comment">; </span></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span><span class="comment">;i&lt;23;++i)</span></span><br><span class="line">        f[u][i] = f[f[u][i<span class="number">-1</span>]][i<span class="number">-1</span>]<span class="comment">;</span></span><br><span class="line">    <span class="keyword">pos</span>[u] = dfscnt++<span class="comment">;</span></span><br><span class="line">    <span class="comment">//printf("Point %d -&gt; %d\n",u,pos[u]);</span></span><br><span class="line">    npos[<span class="keyword">pos</span>[u]] = u<span class="comment">;</span></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span><span class="comment">;i&lt;mp[u].size();++i)&#123;</span></span><br><span class="line">        <span class="keyword">int</span> v = mp[u][i].v<span class="comment">;</span></span><br><span class="line">        <span class="keyword">if</span>(v==fa)<span class="keyword">continue</span><span class="comment">;</span></span><br><span class="line">        dep[v] = dep[u] + <span class="number">1</span><span class="comment">;</span></span><br><span class="line">        dist[v] = dist[u] + mp[u][i].w<span class="comment">;</span></span><br><span class="line">        <span class="comment">//printf("dist[%d]=%d\n",v,dist[v] );</span></span><br><span class="line">        dfs(v,u)<span class="comment">;</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">int</span>&amp; dst(<span class="keyword">int</span> x)&#123;</span><br><span class="line">    <span class="keyword">return</span> dist[npos[x]]<span class="comment">;</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">int</span> lca(<span class="keyword">int</span> u,<span class="keyword">int</span> v)&#123;</span><br><span class="line">    <span class="keyword">if</span>(u==v)<span class="keyword">return</span> u<span class="comment">;</span></span><br><span class="line">    <span class="keyword">if</span>(dep[u] &lt; dep[v])swap(u,v)<span class="comment">;</span></span><br><span class="line">    <span class="keyword">int</span> d = dep[u] - dep[v]<span class="comment">;</span></span><br><span class="line">    rep(i,<span class="number">0</span>,<span class="number">22</span>)<span class="keyword">if</span>(d&amp;(<span class="number">1</span>&lt;&lt;i))u = f[u][i]<span class="comment">;</span></span><br><span class="line">    <span class="keyword">assert</span>(dep[u]==dep[v])<span class="comment">;</span></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">22</span><span class="comment">;i&gt;=0;--i)if(f[u][i]!=f[v][i])&#123;</span></span><br><span class="line">        u = f[u][i]<span class="comment">;</span></span><br><span class="line">        v = f[v][i]<span class="comment">;</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">int</span> <span class="keyword">cnt</span>=<span class="number">0</span><span class="comment">;</span></span><br><span class="line">    <span class="keyword">if</span>(u!=v)&#123;u=f[u][<span class="number">0</span>]<span class="comment">;v=f[v][0];++cnt;&#125;</span></span><br><span class="line">    <span class="keyword">return</span> u<span class="comment">;</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">int</span> LCA(<span class="keyword">int</span> x,<span class="keyword">int</span> y)&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">pos</span>[lca(npos[x],npos[y])]<span class="comment">;</span></span><br><span class="line">&#125;</span><br><span class="line">inline void findlr(<span class="keyword">int</span> x,<span class="keyword">int</span> &amp;l,<span class="keyword">int</span> &amp;r)&#123;</span><br><span class="line">    set&lt;<span class="keyword">int</span>&gt;::iterator it = st.lower_bound(x),it2 = st.upper_bound(x)<span class="comment">;</span></span><br><span class="line">    <span class="keyword">if</span>(it==st.begin()||it2==st.<span class="keyword">end</span>())&#123;</span><br><span class="line">        l=*st.begin()<span class="comment">;</span></span><br><span class="line">        r=*st.rbegin()<span class="comment">;</span></span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        --it<span class="comment">;</span></span><br><span class="line">        l=*it<span class="comment">;</span></span><br><span class="line">        r=*it2<span class="comment">;</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//printf("x=%d l=%d,r=%d\n",x,l,r);</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">int</span> deal(<span class="keyword">int</span> c,<span class="keyword">int</span> x)&#123;</span><br><span class="line">    <span class="keyword">int</span> l,r,ans = <span class="number">0</span><span class="comment">;</span></span><br><span class="line">    <span class="keyword">if</span>(c==<span class="number">1</span>)&#123;</span><br><span class="line">        <span class="keyword">if</span>(st.find(x)!=st.<span class="keyword">end</span>())<span class="keyword">return</span> <span class="number">0</span><span class="comment">;</span></span><br><span class="line">        <span class="keyword">if</span>(st.begin()==st.<span class="keyword">end</span>())&#123;</span><br><span class="line">            st.insert(x)<span class="comment">;return 0;</span></span><br><span class="line">        &#125;</span><br><span class="line">        findlr(x,l,r)<span class="comment">;</span></span><br><span class="line">        ans = dst(x) - dst(LCA(l,x)) - dst(LCA(r,x)) + dst(LCA(l,r))<span class="comment">;</span></span><br><span class="line">        st.insert(x)<span class="comment">;</span></span><br><span class="line">        <span class="keyword">return</span> ans<span class="comment">;</span></span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(st.find(x)==st.<span class="keyword">end</span>())<span class="keyword">return</span> <span class="number">0</span><span class="comment">;</span></span><br><span class="line">        st.erase(x)<span class="comment">;</span></span><br><span class="line">        <span class="keyword">if</span>(st.empty())<span class="keyword">return</span> <span class="number">0</span><span class="comment">;</span></span><br><span class="line">        findlr(x,l,r)<span class="comment">;</span></span><br><span class="line">        ans = dst(x) - dst(LCA(l,x)) - dst(LCA(r,x)) + dst(LCA(l,r))<span class="comment">;</span></span><br><span class="line">        <span class="keyword">return</span> -ans<span class="comment">;</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">int</span> main()&#123;</span><br><span class="line">    <span class="keyword">int</span> T<span class="comment">;scanf("%d",&amp;T);</span></span><br><span class="line">    rep(cas,<span class="number">1</span>,T)&#123;</span><br><span class="line">        scanf(<span class="string">"%d%d"</span>,&amp;n,&amp;q)<span class="comment">;</span></span><br><span class="line">        <span class="keyword">int</span> ans = <span class="number">0</span><span class="comment">; dfscnt = 1;</span></span><br><span class="line">        st.clear()<span class="comment">;</span></span><br><span class="line">        <span class="keyword">memset</span>(f,<span class="number">0</span>,sizeof(f))<span class="comment">;</span></span><br><span class="line">        <span class="keyword">memset</span>(dist,<span class="number">0</span>,sizeof(dist))<span class="comment">;</span></span><br><span class="line">        <span class="keyword">memset</span>(<span class="keyword">pos</span>,<span class="number">0</span>,sizeof(<span class="keyword">pos</span>))<span class="comment">;</span></span><br><span class="line">        <span class="keyword">memset</span>(npos,<span class="number">0</span>,sizeof(npos))<span class="comment">;</span></span><br><span class="line">        <span class="keyword">memset</span>(dep,<span class="number">0</span>,sizeof(dep))<span class="comment">;</span></span><br><span class="line">        rep(i,<span class="number">1</span>,n)</span><br><span class="line">            mp[i].clear()<span class="comment">;</span></span><br><span class="line">        rep(i,<span class="number">1</span>,n<span class="number">-1</span>)&#123;</span><br><span class="line">            <span class="keyword">int</span> u,v,w<span class="comment">;</span></span><br><span class="line">            scanf(<span class="string">"%d%d%d"</span>,&amp;u,&amp;v,&amp;w)<span class="comment">;</span></span><br><span class="line">            adde(u,v,w)<span class="comment">;</span></span><br><span class="line">        &#125;</span><br><span class="line">        dfs(<span class="number">1</span>,<span class="number">0</span>)<span class="comment">;</span></span><br><span class="line">        printf(<span class="string">"Case #%d:\n"</span>,cas)<span class="comment">;</span></span><br><span class="line">        rep(i,<span class="number">1</span>,q)&#123;</span><br><span class="line">            <span class="keyword">int</span> c,x<span class="comment">;</span></span><br><span class="line">            scanf(<span class="string">"%d%d"</span>,&amp;c,&amp;x)<span class="comment">;</span></span><br><span class="line">            ans += deal(c,<span class="keyword">pos</span>[x])<span class="comment">;</span></span><br><span class="line">            printf(<span class="string">"%d\n"</span>,ans)<span class="comment">;</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span><span class="comment">;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-            
-          </span>
+          <p>题意：<br>$n$个点构成的树，$q$个询问，要你维护一个集合，每个询问让你在集合中删除或者添加一个点，然后输出一个整数，为包含集合内所有点的最小生成树的大小</p>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/03/14/HDU-5296/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -983,94 +1064,6 @@
 
 
     
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/01/28/UESTC-2016-Winter-Training-10/" itemprop="url">
-                  UESTC 2016 Winter Training #10
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            发表于
-            <time itemprop="dateCreated" datetime="2016-01-28T18:31:56+08:00" content="2016-01-28">
-              2016-01-28
-            </time>
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/01/28/UESTC-2016-Winter-Training-10/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/01/28/UESTC-2016-Winter-Training-10/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <p>08-09赛季的拉美区域赛…输入输出+爆搜大作战.<br>除了D以外基本每个题读入都让人不爽</p>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/01/28/UESTC-2016-Winter-Training-10/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
 
   </section>
 
@@ -1117,7 +1110,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">36</span>
+              <span class="site-state-item-count">37</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -1131,13 +1124,20 @@
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">24</span>
+              <span class="site-state-item-count">25</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>
 
         </nav>
 
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
         
 
         <div class="links-of-author motion-element">
