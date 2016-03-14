@@ -1,0 +1,695 @@
+<!doctype html>
+<html class="theme-next   use-motion ">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
+
+
+
+
+  <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=0.4.5.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="集训," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.2" />
+
+
+
+
+
+
+<meta name="description" content="最后一场了，做的结果还可以AB是纯水签到题，不说了">
+<meta property="og:type" content="article">
+<meta property="og:title" content="UESTC 2016 Winter Training #15">
+<meta property="og:url" content="http://www.tansong.top/2016/02/22/UESTC-2016-Winter-Training-15/index.html">
+<meta property="og:site_name" content="Tan Song' Blog">
+<meta property="og:description" content="最后一场了，做的结果还可以AB是纯水签到题，不说了">
+<meta property="og:updated_time" content="2016-02-22T13:05:21.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="UESTC 2016 Winter Training #15">
+<meta name="twitter:description" content="最后一场了，做的结果还可以AB是纯水签到题，不说了">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var CONFIG = {
+    scheme: '',
+    sidebar: 'post',
+    motion: true
+  };
+</script>
+
+  <title> UESTC 2016 Winter Training #15 | Tan Song' Blog </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  <!--[if lte IE 8]>
+  <div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;margin:0 auto;'>
+    <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+      <img src="http://7u2nvr.com1.z0.glb.clouddn.com/picouterie.jpg" border="0" height="42" width="820"
+           alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today or use other browser ,like chrome firefox safari."
+           style='margin-left:auto;margin-right:auto;display: block;'/>
+    </a>
+  </div>
+<![endif]-->
+  
+
+
+
+
+
+
+  <div class="container one-column page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">Tan Song' Blog</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">ACM蒟蒻</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu ">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div id="content" class="content">
+          
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                UESTC 2016 Winter Training #15
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            发表于
+            <time itemprop="dateCreated" datetime="2016-02-22T19:53:33+08:00" content="2016-02-22">
+              2016-02-22
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/02/22/UESTC-2016-Winter-Training-15/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/02/22/UESTC-2016-Winter-Training-15/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body">
+
+      
+      
+
+      
+        <span itemprop="articleBody"><p>最后一场了，做的结果还可以<br>AB是纯水签到题，不说了</p>
+<a id="more"></a>
+<h2 id="D"><a href="#D" class="headerlink" title="D"></a>D</h2><p>题意：<br>你有10000个物品，原价为ci，你有10w个关系，某个物品可以由某两个不同的物品合成而来（保证这三个物品两辆不同）。求得到1号物品的最低消费</p>
+<p>主要是因为有环。无环或者一个环都可以直接dfs，有多个环就只能SPFA了。设a可以由xy合成而来，则加边x-y-&gt;a,y-x-&gt;a</p>
+<figure class="highlight perl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#include&lt;bits/stdc++.h&gt;</span></span><br><span class="line">using namespace std;</span><br><span class="line"><span class="comment">#define rep(i,a,b) for(int i=a;i&lt;=b;++i)</span></span><br><span class="line">const <span class="keyword">int</span> maxn = <span class="number">11000</span>;</span><br><span class="line">typedef long long <span class="keyword">int</span> ll;</span><br><span class="line"><span class="keyword">int</span> n,<span class="keyword">m</span>,w[maxn],vis[maxn];</span><br><span class="line">ll cst[maxn];</span><br><span class="line">struct craft&#123;</span><br><span class="line">	<span class="keyword">int</span> <span class="keyword">y</span>,a;</span><br><span class="line">&#125;;</span><br><span class="line">vector&lt;craft&gt; mp[maxn];</span><br><span class="line">queue&lt;<span class="keyword">int</span>&gt; <span class="keyword">q</span>;<span class="keyword">int</span> in<span class="string">q[maxn]</span>;</span><br><span class="line">void spfa()&#123;</span><br><span class="line">	rep(i,<span class="number">1</span>,n)<span class="keyword">q</span>.<span class="keyword">push</span>(i),in<span class="string">q[i]</span>=<span class="number">1</span>;</span><br><span class="line">	<span class="keyword">while</span>(!<span class="keyword">q</span>.empty())&#123;</span><br><span class="line">		<span class="keyword">int</span> <span class="keyword">x</span>=<span class="keyword">q</span>.front();<span class="keyword">q</span>.<span class="keyword">pop</span>();in<span class="string">q[x]</span>=<span class="number">0</span>;</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;mp[<span class="keyword">x</span>].size();++i)&#123;</span><br><span class="line">			<span class="keyword">int</span> <span class="keyword">y</span>=mp[<span class="keyword">x</span>][i].<span class="keyword">y</span>,a=mp[<span class="keyword">x</span>][i].a;</span><br><span class="line">			<span class="keyword">if</span>(cst[<span class="keyword">x</span>]+cst[<span class="keyword">y</span>]&lt;cst[a])&#123;</span><br><span class="line">				cst[a]=cst[<span class="keyword">x</span>]+cst[<span class="keyword">y</span>];</span><br><span class="line">				<span class="keyword">if</span>(!in<span class="string">q[a]</span>)&#123;<span class="keyword">q</span>.<span class="keyword">push</span>(a);in<span class="string">q[a]</span>=<span class="number">1</span>;&#125;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">int</span> main()&#123;</span><br><span class="line">	freopen(<span class="string">"dwarf.in"</span>,<span class="string">"r"</span>,stdin);</span><br><span class="line">	freopen(<span class="string">"dwarf.out"</span>,<span class="string">"w"</span>,stdout);</span><br><span class="line">	scanf(<span class="string">"%d%d"</span>,&amp;n,&amp;<span class="keyword">m</span>);</span><br><span class="line">	rep(i,<span class="number">1</span>,n)&#123;</span><br><span class="line">		scanf(<span class="string">"%d"</span>,&amp;w[i]);cst[i]=w[i];</span><br><span class="line">	&#125;</span><br><span class="line">	rep(i,<span class="number">1</span>,<span class="keyword">m</span>)&#123;</span><br><span class="line">		<span class="keyword">int</span> a,<span class="keyword">x</span>,<span class="keyword">y</span>;</span><br><span class="line">		scanf(<span class="string">"%d%d%d"</span>,&amp;a,&amp;<span class="keyword">x</span>,&amp;<span class="keyword">y</span>);</span><br><span class="line">		mp[<span class="keyword">x</span>].push_back((craft)&#123;<span class="keyword">y</span>,a&#125;);</span><br><span class="line">		mp[<span class="keyword">y</span>].push_back((craft)&#123;<span class="keyword">x</span>,a&#125;);</span><br><span class="line">	&#125;</span><br><span class="line">	spfa();</span><br><span class="line">	cout&lt;&lt;cst[<span class="number">1</span>]&lt;&lt;endl;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="E"><a href="#E" class="headerlink" title="E"></a>E</h2><p>题意：<br>你有一个10w个方块排成一排的区域，每次给你一个1x1或者1x2的方块放在这上面，如果放不下了你可以清除掉上面的任意方块再放这个上去。每次放完时，以当时存在的方块数量作为得分。求问最大的得分是多少</p>
+<p>可以很容易的看出策略：如果放不下了，就去掉1x2的放1x1的，否则不会更优。不需要模拟，只需要保存你拥有的两种方块的数量即可</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> rep(i,a,b) for(int i=a;i&lt;=b;++i)</span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	freopen(<span class="string">"energy.in"</span>,<span class="string">"r"</span>,<span class="built_in">stdin</span>);</span><br><span class="line">	freopen(<span class="string">"energy.out"</span>,<span class="string">"w"</span>,<span class="built_in">stdout</span>);</span><br><span class="line">	<span class="keyword">long</span> <span class="keyword">long</span> <span class="keyword">int</span> ans=<span class="number">0</span>;</span><br><span class="line">	<span class="keyword">int</span> n,a=<span class="number">0</span>,b=<span class="number">0</span>,c=<span class="number">0</span>;<span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;n);</span><br><span class="line">	<span class="keyword">while</span>(<span class="built_in">scanf</span>(<span class="string">"%1d"</span>,&amp;c)==<span class="number">1</span>)&#123;</span><br><span class="line">		<span class="keyword">if</span>(c==<span class="number">1</span>)a++;</span><br><span class="line">		<span class="keyword">else</span> b++;</span><br><span class="line">		<span class="keyword">if</span>(a+<span class="number">2</span>*b&gt;n)&#123;</span><br><span class="line">			<span class="keyword">if</span>(b)b--;</span><br><span class="line">			<span class="keyword">else</span> a--;</span><br><span class="line">		&#125;</span><br><span class="line">		ans+=a+b;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">cout</span>&lt;&lt;ans&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="F"><a href="#F" class="headerlink" title="F"></a>F</h2><p>题意：<br>一个上飞机坐座位的过程。每个飞机每一排有6个位置，若某人要去坐在第k排，那么此时他登机的麻烦程度记为前k-1排已经入座的人数。乘客到来的顺序是给定的。你可以把所有的排分成连续的k组（不超过50组），按组登机每次坐在同一组内的人按相对顺序登机，他的麻烦程度只考虑这一组在此人之前入座的前排的人数，这样每组之间相对独立。求所有人的麻烦程度总和最小的值</p>
+<p>分成k段是个很简单的DP模型，难点在O(n^2)的预处理。很容易想到如果有cost[i][j]表示第i行到j行分成一段这些人的麻烦程度的总和，就可以随便DP了，现在我们来预处理这个cost数组</p>
+<p>考虑每个人坐进座位的过程，想象它直接坐到位置上，再一排排向前检查计算麻烦程度。假设入座pos位置，检查到某一排，如第k排有r个人，那么cost[k][pos],cost[k][pos+1],…,cost[k][n]都要加上r。这就转化成了一个前缀和问题。我们只要在cost[k][pos]+=r 最后在一口气做一下前缀和即可</p>
+<figure class="highlight hsp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span>&lt;bits/stdc++.h&gt;</span></span><br><span class="line">using namespace std<span class="comment">;</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> rep(i,a,b) for(int i=a;i&lt;=b;++i)</span></span><br><span class="line">const <span class="keyword">int</span> maxn = <span class="number">1010</span><span class="comment">;</span></span><br><span class="line"><span class="keyword">int</span> n,s,k,cost[maxn][maxn],dp[maxn][<span class="number">55</span>],a[maxn],sit[maxn]<span class="comment">;</span></span><br><span class="line"><span class="keyword">int</span> dfs(<span class="keyword">int</span> ed,<span class="keyword">int</span> ct)&#123;</span><br><span class="line">	<span class="keyword">if</span>(dp[ed][ct]!=<span class="number">-1</span>)<span class="keyword">return</span> dp[ed][ct]<span class="comment">;</span></span><br><span class="line">	<span class="keyword">if</span>(ct==<span class="number">1</span>)<span class="keyword">return</span> cost[<span class="number">1</span>][ed]<span class="comment">;</span></span><br><span class="line">	<span class="keyword">int</span> tmp=<span class="number">1000000007</span><span class="comment">;</span></span><br><span class="line">	rep(i,<span class="number">1</span>,ed<span class="number">-1</span>)tmp=min(tmp,dfs(i,ct<span class="number">-1</span>)+cost[i+<span class="number">1</span>][ed])<span class="comment">;</span></span><br><span class="line">	<span class="keyword">return</span> dp[ed][ct]=tmp<span class="comment">;</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">int</span> main()&#123;</span><br><span class="line">	freopen(<span class="string">"flight.in"</span>,<span class="string">"r"</span>,stdin)<span class="comment">;</span></span><br><span class="line">	freopen(<span class="string">"flight.out"</span>,<span class="string">"w"</span>,stdout)<span class="comment">;</span></span><br><span class="line">	scanf(<span class="string">"%d%d%d"</span>,&amp;n,&amp;s,&amp;k)<span class="comment">;</span></span><br><span class="line">	<span class="keyword">memset</span>(dp,<span class="number">-1</span>,sizeof(dp))<span class="comment">;</span></span><br><span class="line">	rep(i,<span class="number">1</span>,n)scanf(<span class="string">"%d"</span>,&amp;a[i])<span class="comment">;</span></span><br><span class="line">	rep(ct,<span class="number">1</span>,n)&#123;</span><br><span class="line">		<span class="keyword">int</span> x=a[ct],<span class="keyword">cnt</span>=<span class="number">0</span><span class="comment">;</span></span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> p=x<span class="number">-1</span><span class="comment">;p;--p)&#123;</span></span><br><span class="line">			<span class="keyword">cnt</span>+=sit[p]<span class="comment">;</span></span><br><span class="line">			cost[p][x]+=<span class="keyword">cnt</span><span class="comment">;</span></span><br><span class="line">		&#125;</span><br><span class="line">		sit[x]++<span class="comment">;</span></span><br><span class="line">	&#125;</span><br><span class="line">	rep(i,<span class="number">1</span>,s)</span><br><span class="line">		rep(j,i+<span class="number">1</span>,s)</span><br><span class="line">			cost[i][j]+=cost[i][j<span class="number">-1</span>]<span class="comment">;</span></span><br><span class="line">	cout&lt;&lt;dfs(s,k)&lt;&lt;endl<span class="comment">;</span></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span><span class="comment">;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="G"><a href="#G" class="headerlink" title="G"></a>G</h2><p>题意：<br>
+在一个$W*H$的大矩形中放置$w*h$的小矩形，要求一个不重叠且再也不能继续放置小矩形的方案使得小矩形的数量最少。
+<br>考虑一下间距，简单推一下公式就好了。</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> rep(i,a,b) for(int i=a;i&lt;=b;++i)</span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	freopen(<span class="string">"garage.in"</span>,<span class="string">"r"</span>,<span class="built_in">stdin</span>);</span><br><span class="line">	freopen(<span class="string">"garage.out"</span>,<span class="string">"w"</span>,<span class="built_in">stdout</span>);</span><br><span class="line">	<span class="keyword">int</span> W,H,w,h;<span class="built_in">cin</span>&gt;&gt;W&gt;&gt;H&gt;&gt;w&gt;&gt;h;</span><br><span class="line">	<span class="keyword">int</span> x=W/(<span class="number">2</span>*w);<span class="keyword">if</span>(W%(<span class="number">2</span>*w)&gt;=w)++x;</span><br><span class="line">	<span class="keyword">int</span> y=H/(<span class="number">2</span>*h);<span class="keyword">if</span>(H%(<span class="number">2</span>*h)&gt;=h)++y;</span><br><span class="line">	<span class="built_in">cout</span>&lt;&lt;x*y&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</span>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/集训/" rel="tag">#集训</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/02/15/Educational-Codeforces-Round-7/" rel="next" title="Educational Codeforces Round 7">
+                <i class="fa fa-chevron-left"></i> Educational Codeforces Round 7
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/02/24/C-scanf-printf/" rel="prev" title="C中的scanf与printf">
+                C中的scanf与printf <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+        </div>
+
+        
+
+
+        
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/02/22/UESTC-2016-Winter-Training-15/"
+           data-title="UESTC 2016 Winter Training #15" data-url="http://www.tansong.top/2016/02/22/UESTC-2016-Winter-Training-15/">
+      </div>
+    
+  </div>
+
+
+      </div>
+
+      
+        
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" src="/head.jpg" alt="Tan Song" itemprop="image"/>
+          <p class="site-author-name" itemprop="name">Tan Song</p>
+        </div>
+        <p class="site-description motion-element" itemprop="description"></p>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">36</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          <div class="site-state-item site-state-categories">
+            
+              <span class="site-state-item-count">0</span>
+              <span class="site-state-item-name">分类</span>
+              
+          </div>
+
+          <div class="site-state-item site-state-tags">
+            <a href="/tags">
+              <span class="site-state-item-count">24</span>
+              <span class="site-state-item-name">标签</span>
+              </a>
+          </div>
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/tsstss123" target="_blank">
+                  
+                    <i class="fa fa-github"></i> GitHub
+                  
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc-indicator-top post-toc-indicator">
+            <i class="fa fa-angle-double-up"></i>
+          </div>
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#D"><span class="nav-number">1.</span> <span class="nav-text">D</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#E"><span class="nav-number">2.</span> <span class="nav-text">E</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#F"><span class="nav-number">3.</span> <span class="nav-text">F</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#G"><span class="nav-number">4.</span> <span class="nav-text">G</span></a></li></ol></div>
+            
+          </div>
+          <div class="post-toc-indicator-bottom post-toc-indicator">
+            <i class="fa fa-angle-double-down"></i>
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+      
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="icon-next-heart fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Tan Song</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT
+  </a>
+</div>
+
+
+
+      </div>
+    </footer>
+
+    <div class="back-to-top"></div>
+  </div>
+
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  
+
+  
+    
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"tansong"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+    
+     
+
+
+    
+  
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+  <script type="text/javascript" src="/js/fancy-box.js?v=0.4.5.2"></script>
+
+
+  <script type="text/javascript" src="/js/helpers.js?v=0.4.5.2"></script>
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+<script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+
+<script type="text/javascript" src="/js/motion.js?v=0.4.5.2" id="motion.global"></script>
+
+
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  
+<script type="text/javascript" src="/js/bootstrap.scrollspy.js?v=0.4.5.2" id="bootstrap.scrollspy.custom"></script>
+
+
+<script type="text/javascript" id="sidebar.toc.highlight">
+  $(document).ready(function () {
+    var tocSelector = '.post-toc';
+    var $tocSelector = $(tocSelector);
+    var activeCurrentSelector = '.active-current';
+
+    $tocSelector
+      .on('activate.bs.scrollspy', function () {
+        var $currentActiveElement = $(tocSelector + ' .active').last();
+
+        removeCurrentActiveClass();
+        $currentActiveElement.addClass('active-current');
+
+        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
+      })
+      .on('clear.bs.scrollspy', function () {
+        removeCurrentActiveClass();
+      });
+
+    function removeCurrentActiveClass () {
+      $(tocSelector + ' ' + activeCurrentSelector)
+        .removeClass(activeCurrentSelector.substring(1));
+    }
+
+    function processTOC () {
+      getTOCMaxHeight();
+      toggleTOCOverflowIndicators();
+    }
+
+    function getTOCMaxHeight () {
+      var height = $('.sidebar').height() -
+                   $tocSelector.position().top -
+                   $('.post-toc-indicator-bottom').height();
+
+      $tocSelector.css('height', height);
+
+      return height;
+    }
+
+    function toggleTOCOverflowIndicators () {
+      tocOverflowIndicator(
+        '.post-toc-indicator-top',
+        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
+      );
+
+      tocOverflowIndicator(
+        '.post-toc-indicator-bottom',
+        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
+      )
+    }
+
+    $(document).on('sidebar.motion.complete', function () {
+      processTOC();
+    });
+
+    $('body').scrollspy({ target: tocSelector });
+    $(window).on('resize', function () {
+      if ( $('.sidebar').hasClass('sidebar-active') ) {
+        processTOC();
+      }
+    });
+
+    onScroll($tocSelector);
+
+    function onScroll (element) {
+      element.on('mousewheel DOMMouseScroll', function (event) {
+          var oe = event.originalEvent;
+          var delta = oe.wheelDelta || -oe.detail;
+
+          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+          event.preventDefault();
+
+          toggleTOCOverflowIndicators();
+      });
+    }
+
+    function tocOverflowIndicator (indicator, action) {
+      var $indicator = $(indicator);
+      var opacity = action === 'show' ? 1 : 0;
+      $indicator.velocity ?
+        $indicator.velocity('stop').velocity({
+          opacity: opacity
+        }, { duration: 100 }) :
+        $indicator.stop().animate({
+          opacity: opacity
+        }, 100);
+    }
+
+  });
+</script>
+
+<script type="text/javascript" id="sidebar.nav">
+  $(document).ready(function () {
+    var html = $('html');
+    var TAB_ANIMATE_DURATION = 200;
+    var hasVelocity = $.isFunction(html.velocity);
+
+    $('.sidebar-nav li').on('click', function () {
+      var item = $(this);
+      var activeTabClassName = 'sidebar-nav-active';
+      var activePanelClassName = 'sidebar-panel-active';
+      if (item.hasClass(activeTabClassName)) {
+        return;
+      }
+
+      var currentTarget = $('.' + activePanelClassName);
+      var target = $('.' + item.data('target'));
+
+      hasVelocity ?
+        currentTarget.velocity('transition.slideUpOut', TAB_ANIMATE_DURATION, function () {
+          target
+            .velocity('stop')
+            .velocity('transition.slideDownIn', TAB_ANIMATE_DURATION)
+            .addClass(activePanelClassName);
+        }) :
+        currentTarget.animate({ opacity: 0 }, TAB_ANIMATE_DURATION, function () {
+          currentTarget.hide();
+          target
+            .stop()
+            .css({'opacity': 0, 'display': 'block'})
+            .animate({ opacity: 1 }, TAB_ANIMATE_DURATION, function () {
+              currentTarget.removeClass(activePanelClassName);
+              target.addClass(activePanelClassName);
+            });
+        });
+
+      item.siblings().removeClass(activeTabClassName);
+      item.addClass(activeTabClassName);
+    });
+
+    $('.post-toc a').on('click', function (e) {
+      e.preventDefault();
+      var targetSelector = escapeSelector(this.getAttribute('href'));
+      var offset = $(targetSelector).offset().top;
+      hasVelocity ?
+        html.velocity('stop').velocity('scroll', {
+          offset: offset  + 'px',
+          mobileHA: false
+        }) :
+        $('html, body').stop().animate({
+          scrollTop: offset
+        }, 500);
+    });
+
+    // Expand sidebar on post detail page by default, when post has a toc.
+    motionMiddleWares.sidebar = function () {
+      var $tocContent = $('.post-toc-content');
+      if (CONFIG.sidebar === 'post') {
+        if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
+          displaySidebar();
+        }
+      }
+    };
+  });
+</script>
+
+
+
+  <script type="text/javascript" src="/js/bootstrap.js"></script>
+
+  
+  
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+  </script>
+
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+      var all = MathJax.Hub.getAllJax(), i;
+      for (i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+    });
+  </script>
+
+  
+    <script type="text/javascript" src="http://cdn.staticfile.org/mathjax/2.4.0/MathJax.js"></script>
+    <script type="text/javascript" src="http://cdn.staticfile.org/mathjax/2.4.0/config/TeX-AMS-MML_HTMLorMML.js"></script>
+  
+
+
+  
+  
+
+</body>
+</html>

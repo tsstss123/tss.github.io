@@ -1,0 +1,712 @@
+<!doctype html>
+<html class="theme-next   use-motion ">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
+
+
+
+
+  <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=0.4.5.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="技巧," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.2" />
+
+
+
+
+
+
+<meta name="description" content="为什么要用Markdown写现在再用Word,PowerPoint什么的就太Low了…最重要的是:公式太难看了公式丑的像屎直接用Latex又太高端了不会啊…怎么办
+鉴于平常使用的 Markdown 是文章神器…就用这个来写吧.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Markdown+Pandoc写PDF">
+<meta property="og:url" content="http://www.tansong.top/2015/12/25/Markdown-Pandoc写PDF/index.html">
+<meta property="og:site_name" content="Tan Song' Blog">
+<meta property="og:description" content="为什么要用Markdown写现在再用Word,PowerPoint什么的就太Low了…最重要的是:公式太难看了公式丑的像屎直接用Latex又太高端了不会啊…怎么办
+鉴于平常使用的 Markdown 是文章神器…就用这个来写吧.">
+<meta property="og:updated_time" content="2016-01-09T14:08:11.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Markdown+Pandoc写PDF">
+<meta name="twitter:description" content="为什么要用Markdown写现在再用Word,PowerPoint什么的就太Low了…最重要的是:公式太难看了公式丑的像屎直接用Latex又太高端了不会啊…怎么办
+鉴于平常使用的 Markdown 是文章神器…就用这个来写吧.">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var CONFIG = {
+    scheme: '',
+    sidebar: 'post',
+    motion: true
+  };
+</script>
+
+  <title> Markdown+Pandoc写PDF | Tan Song' Blog </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  <!--[if lte IE 8]>
+  <div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;margin:0 auto;'>
+    <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+      <img src="http://7u2nvr.com1.z0.glb.clouddn.com/picouterie.jpg" border="0" height="42" width="820"
+           alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today or use other browser ,like chrome firefox safari."
+           style='margin-left:auto;margin-right:auto;display: block;'/>
+    </a>
+  </div>
+<![endif]-->
+  
+
+
+
+
+
+
+  <div class="container one-column page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">Tan Song' Blog</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">ACM蒟蒻</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu ">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div id="content" class="content">
+          
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                Markdown+Pandoc写PDF
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            发表于
+            <time itemprop="dateCreated" datetime="2015-12-25T13:00:08+08:00" content="2015-12-25">
+              2015-12-25
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2015/12/25/Markdown-Pandoc写PDF/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/12/25/Markdown-Pandoc写PDF/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body">
+
+      
+      
+
+      
+        <span itemprop="articleBody"><h2 id="为什么要用Markdown写"><a href="#为什么要用Markdown写" class="headerlink" title="为什么要用Markdown写"></a>为什么要用Markdown写</h2><p>现在再用Word,PowerPoint什么的就太Low了…<br>最重要的是:<br><strong>公式太难看了</strong><br><strong>公式丑的像屎</strong><br>直接用Latex又太高端了不会啊…怎么办</p>
+<p>鉴于平常使用的 Markdown 是文章神器…就用这个来写吧.<br><a id="more"></a></p>
+<blockquote>
+<p>插一条内容~发现了一个新的神器…请拉到最下看…</p>
+</blockquote>
+<p>然后就发现了一款神器-Pandoc是Haskell写出来的神器…话说知道Haskell这门艺术一般的语言这么久了…这是第一次发现这语言还有这么牛逼的作品,醉了…</p>
+<p>Pandoc支持几乎所有的开源文字格式,支持Win/OSX/Linux..6的飞起,就是运行起来感觉稍稍有点慢(毕竟Haskell写出来的)</p>
+<p>最重要的是:直接支持<strong>Latex</strong>的编译和内嵌公式,给Markdown写作增添了无穷威力!<br>Pandoc支持md-&gt;tex(can use template)-&gt;pdf,所以可以使用markdown+latex混写的写作方式,最后生成pdf…新手可以什么都不用管直接套版,老手可以避开latex中恼人的设置<strong>专注于写作</strong></p>
+<blockquote>
+<p>给人感觉:专注于写作就是Markdown存在的真正意义,无论用来做什么事情</p>
+</blockquote>
+<p>再提一下PPT…Pandoc原生支持Beamer!!!只要带上参数就能直接调用Beamer自带的那些逼格报表的模板</p>
+<p>Pandoc的Markdown语法与标准Md语法略有差别,最主要的区别是:换行用一个空行表示.其他比较牛逼的拓展就是支持表格(包括居左居中居右)</p>
+<h2 id="如何使用Pandoc-Beamer"><a href="#如何使用Pandoc-Beamer" class="headerlink" title="如何使用Pandoc+Beamer"></a>如何使用Pandoc+Beamer</h2><p>正如使用Latex一样…首先要让套件支持中文<br><code>pandoc -D beamer &gt; beamer-template.tex</code><br>先导出默认模板<br>在\ifxetex后面加入对中文的支持<br><figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">\<span class="name">usepackage</span><span class="string">&#123;xeCJK&#125;</span></span>                 <span class="comment">% 设置中英文字体</span></span><br><span class="line"><span class="tag">\<span class="name">setCJKmainfont</span><span class="string">&#123;SimHei&#125;</span></span> <span class="comment">% 中文字体</span></span><br><span class="line"><span class="tag">\<span class="name">setmainfont</span><span class="string">&#123;Arial&#125;</span></span>                <span class="comment">% 英文字体</span></span><br><span class="line"><span class="tag">\<span class="name">setromanfont</span><span class="string">&#123;Courier New&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">setmonofont</span><span class="string">&#123;Courier New&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">linespread</span><span class="string">&#123;1.2&#125;</span></span><span class="tag">\<span class="name">selectfont</span></span>        <span class="comment">% 行距</span></span><br><span class="line"><span class="tag">\<span class="name">XeTeXlinebreaklocale</span></span> "zh"         <span class="comment">% 中文自动换行</span></span><br><span class="line"><span class="tag">\<span class="name">XeTeXlinebreakskip</span> = <span class="number">0pt</span></span> plus 1pt <span class="comment">% 字之间加0pt至1pt间距</span></span><br><span class="line"><span class="tag">\<span class="name">parindent</span></span> 0em                     <span class="comment">% 段缩进</span></span><br><span class="line"><span class="tag">\<span class="name">setlength</span><span class="string">&#123;\parskip&#125;</span><span class="string">&#123;20pt&#125;</span></span>         <span class="comment">% 段间距</span></span><br></pre></td></tr></table></figure></p>
+<p>这里容易出问题的就是<code>\setCJKmainfont{SimHei}</code>设置字体上.由于Win\Linux\OSX上的字体各不相同所以必须自己调整.<br>很操蛋的一件事情就是:生成时报错信息是几乎没有的,需要自己去.log里面看</p>
+<blockquote>
+<p>使用命令<code>fc-list</code>可以打出已经安装的所有字体</p>
+</blockquote>
+<h2 id="如何插入公式"><a href="#如何插入公式" class="headerlink" title="如何插入公式"></a>如何插入公式</h2><p>行内用法:<br>\$Tex公式\$<br>独立成行用法:<br>\$\$Tex公式\$\$</p>
+<h2 id="混写的实用技巧"><a href="#混写的实用技巧" class="headerlink" title="混写的实用技巧"></a>混写的实用技巧</h2><h3 id="设置页面比例"><a href="#设置页面比例" class="headerlink" title="设置页面比例"></a>设置页面比例</h3><p>在模板文件的documentclass中(一般在第一行)加参数<br>例-Pandoc的默认模板:<br><figure class="highlight xquery"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">\documentclass[$if(fontsize)$$fontsize$,$endif$$if(handout)$handout,$endif$$if(beamer)$ignorenonframetext,$endif$$for(classoption)$$classoption$$sep$,$endfor$]&#123;$documentclass$&#125;</span><br></pre></td></tr></table></figure></p>
+<p>在[]内最后加上<code>,aspectratio=169</code><br>即可设置页面比例为16:9(默认为4:3)。<br>设置比例为16:10同理</p>
+<h3 id="设置背景图片"><a href="#设置背景图片" class="headerlink" title="设置背景图片"></a>设置背景图片</h3><p>在模板文件中加入命令<br><code>\usebackgroundtemplate{\includegraphics[width=\paperwidth, height=\paperheight]{background.png}}</code></p>
+<p>如果要对标题页单独设置背景<br><figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">\<span class="name">RequirePackage</span><span class="string">&#123;tikz&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">addtobeamertemplate</span><span class="string">&#123;title page&#125;</span><span class="string">&#123;%</span><br><span class="line">    \begin&#123;tikzpicture&#125;</span><span class="string">[remember picture,overlay]</span></span></span><br><span class="line">        <span class="tag">\<span class="name">node</span></span> [xshift=0cm,yshift=0cm] at (current page.center)</span><br><span class="line">            &#123;<span class="tag">\<span class="name">includegraphics</span><span class="string">[width=\paperwidth, height=\paperheight]</span><span class="string">&#123;background_title.png&#125;</span></span>&#125;;</span><br><span class="line">    <span class="tag">\<span class="name">end</span><span class="string">&#123;tikzpicture&#125;</span></span><span class="comment">%</span></span><br><span class="line">&#125;&#123;&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="深入学习1"><a href="#深入学习1" class="headerlink" title="深入学习1"></a>深入学习1</h2><p><a href="http://www.zhihu.com/question/21088362" target="_blank" rel="external">如何使用LaTeX让自己不乱？知乎</a><br><a href="http://tex.stackexchange.com/questions/51457/can-i-specify-title-page-customization-in-a-template-instead-of-my-document" target="_blank" rel="external">PPT背景问题</a><br><a href="https://github.com/larrycai/kaiyuanbook" target="_blank" rel="external">Github开源书教程</a><br><a href="http://elegantlatex.org/" target="_blank" rel="external">ElegantLatex(Latex.Beamer)</a><br><a href="http://kevinyoung.gitcafe.io/articles/latex/pandoc_markdown_pdf.html" target="_blank" rel="external">Pandoc使用</a></p>
+<h2 id="深入学习2"><a href="#深入学习2" class="headerlink" title="深入学习2"></a>深入学习2</h2><p>无意中又看了一些帖子涨了很多MD的姿势啊<br><a href="http://www.jianshu.com/p/17fdcf17bbb4" target="_blank" rel="external">MD让书写更美好</a><br><a href="http://afoo.me/posts/2013-07-10-how-to-transform-chinese-pdf-with-pandoc.html" target="_blank" rel="external">pandoc中文pdf转换攻略</a><br><a href="https://gist.github.com/fangpeishi/5cc11fa503f1e9eda2c1" target="_blank" rel="external">一份更好的PDF版(PPT没试过)</a><br><a href="http://www.douban.com/review/7317179/" target="_blank" rel="external">豆瓣资料(上面版的链接)</a><br><a href="https://github.com/adamzap/landslide" target="_blank" rel="external">一个看起来不错的HTMLPPT-Landslides</a><br><a href="http://www.jianshu.com/p/e063303317cb" target="_blank" rel="external">简书上对Landslides的说明</a><br><a href="https://github.com/tzengyuxio/pages" target="_blank" rel="external">PandocMD语法翻译</a><br><a href="https://github.com/ksky521/nodePPT" target="_blank" rel="external">国货PPT看起来很牛逼</a></p>
+<p>还有Mac下的PPT<br><a href="http://www.jianshu.com/p/b66e091565da" target="_blank" rel="external">Deckset简书的介绍</a></p>
+<p><a href="https://github.com/justjavac/free-programming-books-zh_CN" target="_blank" rel="external">开源书大全</a></p>
+<h2 id="新的神器"><a href="#新的神器" class="headerlink" title="新的神器!!"></a>新的神器!!</h2><p>2016-01-09更新</p>
+<p>发现一个新的神器<a href="https://www.madoko.net" target="_blank" rel="external">戳这里!</a></p>
+<p>知乎上的介绍在这<a href="https://www.zhihu.com/question/19637157/answer/78063239" target="_blank" rel="external">madoko</a></p>
+</span>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/技巧/" rel="tag">#技巧</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2015/12/12/SPOJ-COT-可持久化平衡树-主席树/" rel="next" title="SPOJ COT 可持久化平衡树/主席树">
+                <i class="fa fa-chevron-left"></i> SPOJ COT 可持久化平衡树/主席树
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2015/12/27/孤独的本质/" rel="prev" title="孤独的本质 | 如何解决孤独的痛苦，走向心智的成熟">
+                孤独的本质 | 如何解决孤独的痛苦，走向心智的成熟 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+        </div>
+
+        
+
+
+        
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2015/12/25/Markdown-Pandoc写PDF/"
+           data-title="Markdown+Pandoc写PDF" data-url="http://www.tansong.top/2015/12/25/Markdown-Pandoc写PDF/">
+      </div>
+    
+  </div>
+
+
+      </div>
+
+      
+        
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" src="/head.jpg" alt="Tan Song" itemprop="image"/>
+          <p class="site-author-name" itemprop="name">Tan Song</p>
+        </div>
+        <p class="site-description motion-element" itemprop="description"></p>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">36</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          <div class="site-state-item site-state-categories">
+            
+              <span class="site-state-item-count">0</span>
+              <span class="site-state-item-name">分类</span>
+              
+          </div>
+
+          <div class="site-state-item site-state-tags">
+            <a href="/tags">
+              <span class="site-state-item-count">24</span>
+              <span class="site-state-item-name">标签</span>
+              </a>
+          </div>
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/tsstss123" target="_blank">
+                  
+                    <i class="fa fa-github"></i> GitHub
+                  
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc-indicator-top post-toc-indicator">
+            <i class="fa fa-angle-double-up"></i>
+          </div>
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#为什么要用Markdown写"><span class="nav-number">1.</span> <span class="nav-text">为什么要用Markdown写</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#如何使用Pandoc-Beamer"><span class="nav-number">2.</span> <span class="nav-text">如何使用Pandoc+Beamer</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#如何插入公式"><span class="nav-number">3.</span> <span class="nav-text">如何插入公式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#混写的实用技巧"><span class="nav-number">4.</span> <span class="nav-text">混写的实用技巧</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#设置页面比例"><span class="nav-number">4.1.</span> <span class="nav-text">设置页面比例</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#设置背景图片"><span class="nav-number">4.2.</span> <span class="nav-text">设置背景图片</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#深入学习1"><span class="nav-number">5.</span> <span class="nav-text">深入学习1</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#深入学习2"><span class="nav-number">6.</span> <span class="nav-text">深入学习2</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#新的神器"><span class="nav-number">7.</span> <span class="nav-text">新的神器!!</span></a></li></ol></div>
+            
+          </div>
+          <div class="post-toc-indicator-bottom post-toc-indicator">
+            <i class="fa fa-angle-double-down"></i>
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+      
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="icon-next-heart fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Tan Song</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT
+  </a>
+</div>
+
+
+
+      </div>
+    </footer>
+
+    <div class="back-to-top"></div>
+  </div>
+
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  
+
+  
+    
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"tansong"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+    
+     
+
+
+    
+  
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+  <script type="text/javascript" src="/js/fancy-box.js?v=0.4.5.2"></script>
+
+
+  <script type="text/javascript" src="/js/helpers.js?v=0.4.5.2"></script>
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+<script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+
+<script type="text/javascript" src="/js/motion.js?v=0.4.5.2" id="motion.global"></script>
+
+
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  
+<script type="text/javascript" src="/js/bootstrap.scrollspy.js?v=0.4.5.2" id="bootstrap.scrollspy.custom"></script>
+
+
+<script type="text/javascript" id="sidebar.toc.highlight">
+  $(document).ready(function () {
+    var tocSelector = '.post-toc';
+    var $tocSelector = $(tocSelector);
+    var activeCurrentSelector = '.active-current';
+
+    $tocSelector
+      .on('activate.bs.scrollspy', function () {
+        var $currentActiveElement = $(tocSelector + ' .active').last();
+
+        removeCurrentActiveClass();
+        $currentActiveElement.addClass('active-current');
+
+        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
+      })
+      .on('clear.bs.scrollspy', function () {
+        removeCurrentActiveClass();
+      });
+
+    function removeCurrentActiveClass () {
+      $(tocSelector + ' ' + activeCurrentSelector)
+        .removeClass(activeCurrentSelector.substring(1));
+    }
+
+    function processTOC () {
+      getTOCMaxHeight();
+      toggleTOCOverflowIndicators();
+    }
+
+    function getTOCMaxHeight () {
+      var height = $('.sidebar').height() -
+                   $tocSelector.position().top -
+                   $('.post-toc-indicator-bottom').height();
+
+      $tocSelector.css('height', height);
+
+      return height;
+    }
+
+    function toggleTOCOverflowIndicators () {
+      tocOverflowIndicator(
+        '.post-toc-indicator-top',
+        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
+      );
+
+      tocOverflowIndicator(
+        '.post-toc-indicator-bottom',
+        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
+      )
+    }
+
+    $(document).on('sidebar.motion.complete', function () {
+      processTOC();
+    });
+
+    $('body').scrollspy({ target: tocSelector });
+    $(window).on('resize', function () {
+      if ( $('.sidebar').hasClass('sidebar-active') ) {
+        processTOC();
+      }
+    });
+
+    onScroll($tocSelector);
+
+    function onScroll (element) {
+      element.on('mousewheel DOMMouseScroll', function (event) {
+          var oe = event.originalEvent;
+          var delta = oe.wheelDelta || -oe.detail;
+
+          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+          event.preventDefault();
+
+          toggleTOCOverflowIndicators();
+      });
+    }
+
+    function tocOverflowIndicator (indicator, action) {
+      var $indicator = $(indicator);
+      var opacity = action === 'show' ? 1 : 0;
+      $indicator.velocity ?
+        $indicator.velocity('stop').velocity({
+          opacity: opacity
+        }, { duration: 100 }) :
+        $indicator.stop().animate({
+          opacity: opacity
+        }, 100);
+    }
+
+  });
+</script>
+
+<script type="text/javascript" id="sidebar.nav">
+  $(document).ready(function () {
+    var html = $('html');
+    var TAB_ANIMATE_DURATION = 200;
+    var hasVelocity = $.isFunction(html.velocity);
+
+    $('.sidebar-nav li').on('click', function () {
+      var item = $(this);
+      var activeTabClassName = 'sidebar-nav-active';
+      var activePanelClassName = 'sidebar-panel-active';
+      if (item.hasClass(activeTabClassName)) {
+        return;
+      }
+
+      var currentTarget = $('.' + activePanelClassName);
+      var target = $('.' + item.data('target'));
+
+      hasVelocity ?
+        currentTarget.velocity('transition.slideUpOut', TAB_ANIMATE_DURATION, function () {
+          target
+            .velocity('stop')
+            .velocity('transition.slideDownIn', TAB_ANIMATE_DURATION)
+            .addClass(activePanelClassName);
+        }) :
+        currentTarget.animate({ opacity: 0 }, TAB_ANIMATE_DURATION, function () {
+          currentTarget.hide();
+          target
+            .stop()
+            .css({'opacity': 0, 'display': 'block'})
+            .animate({ opacity: 1 }, TAB_ANIMATE_DURATION, function () {
+              currentTarget.removeClass(activePanelClassName);
+              target.addClass(activePanelClassName);
+            });
+        });
+
+      item.siblings().removeClass(activeTabClassName);
+      item.addClass(activeTabClassName);
+    });
+
+    $('.post-toc a').on('click', function (e) {
+      e.preventDefault();
+      var targetSelector = escapeSelector(this.getAttribute('href'));
+      var offset = $(targetSelector).offset().top;
+      hasVelocity ?
+        html.velocity('stop').velocity('scroll', {
+          offset: offset  + 'px',
+          mobileHA: false
+        }) :
+        $('html, body').stop().animate({
+          scrollTop: offset
+        }, 500);
+    });
+
+    // Expand sidebar on post detail page by default, when post has a toc.
+    motionMiddleWares.sidebar = function () {
+      var $tocContent = $('.post-toc-content');
+      if (CONFIG.sidebar === 'post') {
+        if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
+          displaySidebar();
+        }
+      }
+    };
+  });
+</script>
+
+
+
+  <script type="text/javascript" src="/js/bootstrap.js"></script>
+
+  
+  
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+  </script>
+
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+      var all = MathJax.Hub.getAllJax(), i;
+      for (i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+    });
+  </script>
+
+  
+    <script type="text/javascript" src="http://cdn.staticfile.org/mathjax/2.4.0/MathJax.js"></script>
+    <script type="text/javascript" src="http://cdn.staticfile.org/mathjax/2.4.0/config/TeX-AMS-MML_HTMLorMML.js"></script>
+  
+
+
+  
+  
+
+</body>
+</html>
