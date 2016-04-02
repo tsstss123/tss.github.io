@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.tansong.top/"/>
-  <updated>2016-03-14T15:48:44.000Z</updated>
+  <updated>2016-04-02T14:12:07.000Z</updated>
   <id>http://www.tansong.top/</id>
   
   <author>
@@ -14,6 +14,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CF 658C Bear and Forgotten Tree 3</title>
+    <link href="http://www.tansong.top/2016/04/02/CF-658A/"/>
+    <id>http://www.tansong.top/2016/04/02/CF-658A/</id>
+    <published>2016-04-02T14:06:19.000Z</published>
+    <updated>2016-04-02T14:12:07.000Z</updated>
+    
+    <content type="html">&lt;p&gt;题意：&lt;br&gt;要你构造一个$n$个点,直径为$d$,从1号点出发最长路径为$h$的树&lt;/p&gt;
+&lt;p&gt;直径和$n$的关系不大，主要是$d$与$h$的关系，以及$d$$h$为1的时候的特殊情况&lt;br&gt;先构造主链，顺序构造的时候让某条边接到1号点上就巧妙地完成了链构造方向的转移&lt;br&gt;构造其他点的时候，如果$d$与$h$相等的话要把其他点接在2号点才能保证不会延长主链&lt;/p&gt;
+&lt;figure class=&quot;highlight cpp&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;meta-keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;meta-string&quot;&gt;&amp;lt;iostream&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;namespace&lt;/span&gt; &lt;span class=&quot;built_in&quot;&gt;std&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; argc, &lt;span class=&quot;keyword&quot;&gt;char&lt;/span&gt; *argv[])&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; n,d,h;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;built_in&quot;&gt;cin&lt;/span&gt; &amp;gt;&amp;gt; n &amp;gt;&amp;gt; d &amp;gt;&amp;gt; h;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt;(d &amp;gt; &lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;*h || (n&amp;gt;&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt; &amp;amp;&amp;amp; d==&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;))&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&lt;span class=&quot;built_in&quot;&gt;puts&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;-1&quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt;(&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; i=&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;;i&amp;lt;=d;++i)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt;(i == h+&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;			&lt;span class=&quot;built_in&quot;&gt;printf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;%d %d\n&quot;&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;,i+&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&lt;span class=&quot;keyword&quot;&gt;else&lt;/span&gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;			&lt;span class=&quot;built_in&quot;&gt;printf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;%d %d\n&quot;&lt;/span&gt;,i,i+&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt;(&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; i=d+&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;;i&amp;lt;=n;++i)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt;(h == d)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;			&lt;span class=&quot;built_in&quot;&gt;printf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;%d %d\n&quot;&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;,i);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&lt;span class=&quot;keyword&quot;&gt;else&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;			&lt;span class=&quot;built_in&quot;&gt;printf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;%d %d\n&quot;&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;,i);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;题意：&lt;br&gt;要你构造一个$n$个点,直径为$d$,从1号点出发最长路径为$h$的树&lt;/p&gt;
+&lt;p&gt;直径和$n$的关系不大，主要是$d$与$h$的关系，以及$d$$h$为1的时候的特殊情况&lt;br&gt;先构造主链，顺序构造的时候让某条边接到1号点上就巧妙地完成了链构造方向的转移&lt;
+    
+    </summary>
+    
+    
+      <category term="构造" scheme="http://www.tansong.top/tags/%E6%9E%84%E9%80%A0/"/>
+    
+  </entry>
   
   <entry>
     <title>HDU 5293 Tree chain problem</title>
@@ -863,31 +887,6 @@ f[i][j]表示宽度为i的区间(或者说前i列/某i列)，已经染了j个格
     
     
       <category term="集训" scheme="http://www.tansong.top/tags/%E9%9B%86%E8%AE%AD/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hexo中公式语法冲突的解决办法</title>
-    <link href="http://www.tansong.top/2016/01/09/Hexo%E4%B8%AD%E5%85%AC%E5%BC%8F%E8%AF%AD%E6%B3%95%E5%86%B2%E7%AA%81%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/"/>
-    <id>http://www.tansong.top/2016/01/09/Hexo中公式语法冲突的解决办法/</id>
-    <published>2016-01-09T13:44:22.000Z</published>
-    <updated>2016-01-09T14:00:13.000Z</updated>
-    
-    <content type="html">&lt;p&gt;刚刚写一篇题解发现公式怎么弄都会有一部分渲染不出来.研究了接近1h发现是由于hexo中公式渲染在后,markdown解析在前,导致例如下划线等公式部分被markdown先行解析导致公式解析失败.&lt;/p&gt;
-&lt;p&gt;法1:使用  大括号百分号 raw 百分号大括号 + 内容 + 大括号百分号 endraw 百分号大括号  使公式内容不进入md解析引擎&lt;/p&gt;
-&lt;p&gt;法2:更换更智能的md解析引擎.例如markdown-pandoc.但是写法要稍稍改变,不是很顺手,而且相当与之前的文章都要相应变化.不划算.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;http://segmentfault.com/q/1010000003987383/a-1020000003987577&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;参考链接&lt;/a&gt;&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;刚刚写一篇题解发现公式怎么弄都会有一部分渲染不出来.研究了接近1h发现是由于hexo中公式渲染在后,markdown解析在前,导致例如下划线等公式部分被markdown先行解析导致公式解析失败.&lt;/p&gt;
-&lt;p&gt;法1:使用  大括号百分号 raw 百分号大括号 + 内容 + 
-    
-    </summary>
-    
-    
-      <category term="Hexo" scheme="http://www.tansong.top/tags/Hexo/"/>
     
   </entry>
   

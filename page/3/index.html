@@ -202,6 +202,97 @@
             
               
                 
+                <a class="post-title-link" href="/2016/01/09/Hexo中公式语法冲突的解决办法/" itemprop="url">
+                  Hexo中公式语法冲突的解决办法
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            发表于
+            <time itemprop="dateCreated" datetime="2016-01-09T21:44:22+08:00" content="2016-01-09">
+              2016-01-09
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/01/09/Hexo中公式语法冲突的解决办法/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/01/09/Hexo中公式语法冲突的解决办法/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody">
+            
+              <p>刚刚写一篇题解发现公式怎么弄都会有一部分渲染不出来.研究了接近1h发现是由于hexo中公式渲染在后,markdown解析在前,导致例如下划线等公式部分被markdown先行解析导致公式解析失败.</p>
+<p>法1:使用  大括号百分号 raw 百分号大括号 + 内容 + 大括号百分号 endraw 百分号大括号  使公式内容不进入md解析引擎</p>
+<p>法2:更换更智能的md解析引擎.例如markdown-pandoc.但是写法要稍稍改变,不是很顺手,而且相当与之前的文章都要相应变化.不划算.</p>
+<p><a href="http://segmentfault.com/q/1010000003987383/a-1020000003987577" target="_blank" rel="external">参考链接</a></p>
+
+            
+          </span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/01/09/CF-615D/" itemprop="url">
                   CF 615D Multipliers 数学
                 </a>
@@ -976,94 +1067,6 @@
 
 
     
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2015/12/06/Uva-3767-Dynamic-len-set-a-L-R-树套树STL/" itemprop="url">
-                  Uva 3767 Dynamic len(set(a[L:R])) 树套树STL
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            发表于
-            <time itemprop="dateCreated" datetime="2015-12-06T21:15:07+08:00" content="2015-12-06">
-              2015-12-06
-            </time>
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2015/12/06/Uva-3767-Dynamic-len-set-a-L-R-树套树STL/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/12/06/Uva-3767-Dynamic-len-set-a-L-R-树套树STL/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <h2 id="题意"><a href="#题意" class="headerlink" title="题意"></a>题意</h2><p>给你一个5w的序列,5w的长度.序列上每个点都有一个范围在1-100w的数值.每个询问给出区间内有多少种值.</p>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2015/12/06/Uva-3767-Dynamic-len-set-a-L-R-树套树STL/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
 
   </section>
 
@@ -1110,7 +1113,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">37</span>
+              <span class="site-state-item-count">38</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -1124,7 +1127,7 @@
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">25</span>
+              <span class="site-state-item-count">26</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>
