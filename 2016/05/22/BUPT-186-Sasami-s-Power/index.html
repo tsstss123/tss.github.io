@@ -35,7 +35,7 @@
 <link href="/css/main.css?v=0.4.5.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="构造," />
+  <meta name="keywords" content="数学," />
 
 
 
@@ -53,22 +53,22 @@
 
 
 
-<meta name="description" content="题意：要你构造一个$n$个点,直径为$d$,从1号点出发最长路径为$h$的树
-直径和$n$的关系不大，主要是$d$与$h$的关系，以及$d$$h$为1的时候的特殊情况先构造主链，顺序构造的时候让某条边接到1号点上就巧妙地完成了链构造方向的转移构造其他点的时候，如果$d$与$h$相等的话要把其他点接在2号点才能保证不会延长主链
-123456789101112131415161718192021222">
+<meta name="description" content="题意：给出了一个长度为10w的序列A，求有多少个B序列满足A[i] = B[i]+B[i+1]，并且B[i]不降
+严格来说不能算数学题。。想一下（看样例）对于第一个或者最后一个数来说，符合条件的序列一定是连续的。而只要确定这两个数中任意一个数这个数列就确定了。。
+我们假定B[1]的取值范围是[-inf,inf]，那么我们瞎J8推一下就会发现通过A[1],A[2],B[1]的范围可以确定出B[2]的">
 <meta property="og:type" content="article">
-<meta property="og:title" content="CF 658C Bear and Forgotten Tree 3">
-<meta property="og:url" content="http://www.tansong.top/2016/04/02/CF-658A/index.html">
+<meta property="og:title" content="BUPT 186 Sasami's Power">
+<meta property="og:url" content="http://www.tansong.top/2016/05/22/BUPT-186-Sasami-s-Power/index.html">
 <meta property="og:site_name" content="Tan Song' Blog">
-<meta property="og:description" content="题意：要你构造一个$n$个点,直径为$d$,从1号点出发最长路径为$h$的树
-直径和$n$的关系不大，主要是$d$与$h$的关系，以及$d$$h$为1的时候的特殊情况先构造主链，顺序构造的时候让某条边接到1号点上就巧妙地完成了链构造方向的转移构造其他点的时候，如果$d$与$h$相等的话要把其他点接在2号点才能保证不会延长主链
-123456789101112131415161718192021222">
-<meta property="og:updated_time" content="2016-04-02T14:12:07.000Z">
+<meta property="og:description" content="题意：给出了一个长度为10w的序列A，求有多少个B序列满足A[i] = B[i]+B[i+1]，并且B[i]不降
+严格来说不能算数学题。。想一下（看样例）对于第一个或者最后一个数来说，符合条件的序列一定是连续的。而只要确定这两个数中任意一个数这个数列就确定了。。
+我们假定B[1]的取值范围是[-inf,inf]，那么我们瞎J8推一下就会发现通过A[1],A[2],B[1]的范围可以确定出B[2]的">
+<meta property="og:updated_time" content="2016-05-22T06:50:32.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="CF 658C Bear and Forgotten Tree 3">
-<meta name="twitter:description" content="题意：要你构造一个$n$个点,直径为$d$,从1号点出发最长路径为$h$的树
-直径和$n$的关系不大，主要是$d$与$h$的关系，以及$d$$h$为1的时候的特殊情况先构造主链，顺序构造的时候让某条边接到1号点上就巧妙地完成了链构造方向的转移构造其他点的时候，如果$d$与$h$相等的话要把其他点接在2号点才能保证不会延长主链
-123456789101112131415161718192021222">
+<meta name="twitter:title" content="BUPT 186 Sasami's Power">
+<meta name="twitter:description" content="题意：给出了一个长度为10w的序列A，求有多少个B序列满足A[i] = B[i]+B[i+1]，并且B[i]不降
+严格来说不能算数学题。。想一下（看样例）对于第一个或者最后一个数来说，符合条件的序列一定是连续的。而只要确定这两个数中任意一个数这个数列就确定了。。
+我们假定B[1]的取值范围是[-inf,inf]，那么我们瞎J8推一下就会发现通过A[1],A[2],B[1]的范围可以确定出B[2]的">
 
 
 
@@ -80,7 +80,7 @@
   };
 </script>
 
-  <title> CF 658C Bear and Forgotten Tree 3 | Tan Song' Blog </title>
+  <title> BUPT 186 Sasami's Power | Tan Song' Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -200,7 +200,7 @@
             
             
               
-                CF 658C Bear and Forgotten Tree 3
+                BUPT 186 Sasami's Power
               
             
           </h1>
@@ -209,8 +209,8 @@
         <div class="post-meta">
           <span class="post-time">
             发表于
-            <time itemprop="dateCreated" datetime="2016-04-02T22:06:19+08:00" content="2016-04-02">
-              2016-04-02
+            <time itemprop="dateCreated" datetime="2016-05-22T14:44:43+08:00" content="2016-05-22">
+              2016-05-22
             </time>
           </span>
 
@@ -220,8 +220,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/04/02/CF-658A/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/04/02/CF-658A/" itemprop="commentsCount"></span>
+                <a href="/2016/05/22/BUPT-186-Sasami-s-Power/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/05/22/BUPT-186-Sasami-s-Power/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -240,9 +240,10 @@
       
 
       
-        <span itemprop="articleBody"><p>题意：<br>要你构造一个$n$个点,直径为$d$,从1号点出发最长路径为$h$的树</p>
-<p>直径和$n$的关系不大，主要是$d$与$h$的关系，以及$d$$h$为1的时候的特殊情况<br>先构造主链，顺序构造的时候让某条边接到1号点上就巧妙地完成了链构造方向的转移<br>构造其他点的时候，如果$d$与$h$相等的话要把其他点接在2号点才能保证不会延长主链</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">int</span> argc, <span class="keyword">char</span> *argv[])</span> </span>&#123;</span><br><span class="line">	<span class="keyword">int</span> n,d,h;</span><br><span class="line">	<span class="built_in">cin</span> &gt;&gt; n &gt;&gt; d &gt;&gt; h;</span><br><span class="line">	<span class="keyword">if</span>(d &gt; <span class="number">2</span>*h || (n&gt;<span class="number">2</span> &amp;&amp; d==<span class="number">1</span>))&#123;</span><br><span class="line">		<span class="built_in">puts</span>(<span class="string">"-1"</span>);</span><br><span class="line">		<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=d;++i)&#123;</span><br><span class="line">		<span class="keyword">if</span>(i == h+<span class="number">1</span>)</span><br><span class="line">			<span class="built_in">printf</span>(<span class="string">"%d %d\n"</span>,<span class="number">1</span>,i+<span class="number">1</span>);</span><br><span class="line">		<span class="keyword">else</span> </span><br><span class="line">			<span class="built_in">printf</span>(<span class="string">"%d %d\n"</span>,i,i+<span class="number">1</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=d+<span class="number">2</span>;i&lt;=n;++i)&#123;</span><br><span class="line">		<span class="keyword">if</span>(h == d)</span><br><span class="line">			<span class="built_in">printf</span>(<span class="string">"%d %d\n"</span>,<span class="number">2</span>,i);</span><br><span class="line">		<span class="keyword">else</span></span><br><span class="line">			<span class="built_in">printf</span>(<span class="string">"%d %d\n"</span>,<span class="number">1</span>,i);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        <span itemprop="articleBody"><p>题意：<br>给出了一个长度为10w的序列A，求有多少个B序列满足A[i] = B[i]+B[i+1]，并且B[i]不降</p>
+<p>严格来说不能算数学题。。<br>想一下（看样例）对于第一个或者最后一个数来说，符合条件的序列一定是连续的。而只要确定这两个数中任意一个数这个数列就确定了。。</p>
+<p>我们假定B[1]的取值范围是[-inf,inf]，那么我们瞎J8推一下就会发现通过A[1],A[2],B[1]的范围可以确定出B[2]的范围，那么我们只要这样一直递推到B[n]的范围，就是我们要的答案</p>
+<figure class="highlight hsp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> &lt;bits/stdc++.h&gt;</span></span><br><span class="line">using namespace std<span class="comment">;</span></span><br><span class="line">typedef long long <span class="keyword">int</span> ll<span class="comment">;</span></span><br><span class="line"><span class="keyword">int</span> n<span class="comment">;</span></span><br><span class="line">ll a[<span class="number">100100</span>]<span class="comment">;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> main()&#123;</span><br><span class="line">	<span class="keyword">int</span> T<span class="comment">;scanf("%d",&amp;T);</span></span><br><span class="line">	<span class="keyword">while</span>(T--)&#123;</span><br><span class="line">		scanf(<span class="string">"%d"</span>,&amp;n)<span class="comment">;</span></span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span><span class="comment">;i&lt;=n;++i)scanf("%lld",&amp;a[i]);</span></span><br><span class="line">		ll l = <span class="number">-1e15</span>, r = <span class="number">1</span>e15<span class="comment">;</span></span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">2</span><span class="comment">;i&lt;=n;++i)&#123;</span></span><br><span class="line">			ll nl = (a[i<span class="number">-1</span>] - a[i<span class="number">-1</span>]/<span class="number">2</span>)<span class="comment">;</span></span><br><span class="line">			ll nr = a[i] / <span class="number">2</span><span class="comment">;</span></span><br><span class="line">			nl = max(a[i<span class="number">-1</span>]-r,nl)<span class="comment">;</span></span><br><span class="line">			nr = min(a[i<span class="number">-1</span>]-l,nr)<span class="comment">;</span></span><br><span class="line">			l = nl<span class="comment">; r = nr;</span></span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span>(r - l &lt; <span class="number">0</span>)&#123;</span><br><span class="line">			printf(<span class="string">"0\n"</span>)<span class="comment">;</span></span><br><span class="line">		&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">			printf(<span class="string">"%lld\n"</span>,r-l+<span class="number">1</span> )<span class="comment">;</span></span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span><span class="comment">;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </span>
       
     </div>
@@ -251,7 +252,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/构造/" rel="tag">#构造</a>
+            <a href="/tags/数学/" rel="tag">#数学</a>
           
         </div>
       
@@ -260,17 +261,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/03/14/HDU-5293/" rel="next" title="HDU 5293 Tree chain problem">
-                <i class="fa fa-chevron-left"></i> HDU 5293 Tree chain problem
+              <a href="/2016/04/02/CF-658A/" rel="next" title="CF 658C Bear and Forgotten Tree 3">
+                <i class="fa fa-chevron-left"></i> CF 658C Bear and Forgotten Tree 3
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/05/22/BUPT-186-Sasami-s-Power/" rel="prev" title="BUPT 186 Sasami's Power">
-                BUPT 186 Sasami's Power <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -297,8 +294,8 @@
         
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/04/02/CF-658A/"
-           data-title="CF 658C Bear and Forgotten Tree 3" data-url="http://www.tansong.top/2016/04/02/CF-658A/">
+      <div class="ds-thread" data-thread-key="2016/05/22/BUPT-186-Sasami-s-Power/"
+           data-title="BUPT 186 Sasami's Power" data-url="http://www.tansong.top/2016/05/22/BUPT-186-Sasami-s-Power/">
       </div>
     
   </div>
