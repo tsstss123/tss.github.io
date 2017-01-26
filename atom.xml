@@ -4,9 +4,9 @@
   <subtitle>ACM蒟蒻</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://www.tansong.top/"/>
+  <link href="http://tsstss123.github.io/"/>
   <updated>2017-01-26T01:54:22.000Z</updated>
-  <id>http://www.tansong.top/</id>
+  <id>http://tsstss123.github.io/</id>
   
   <author>
     <name>Tan Song</name>
@@ -17,8 +17,8 @@
   
   <entry>
     <title>CDOJ 1397 A Hard-working Girl LRZ</title>
-    <link href="http://www.tansong.top/2016/05/29/CDOJ-1397-A-Hard-working-Girl-LRZ/"/>
-    <id>http://www.tansong.top/2016/05/29/CDOJ-1397-A-Hard-working-Girl-LRZ/</id>
+    <link href="http://tsstss123.github.io/2016/05/29/CDOJ-1397-A-Hard-working-Girl-LRZ/"/>
+    <id>http://tsstss123.github.io/2016/05/29/CDOJ-1397-A-Hard-working-Girl-LRZ/</id>
     <published>2016-05-29T06:40:27.000Z</published>
     <updated>2017-01-26T01:54:22.000Z</updated>
     
@@ -34,14 +34,14 @@
     </summary>
     
     
-      <category term="数学" scheme="http://www.tansong.top/tags/%E6%95%B0%E5%AD%A6/"/>
+      <category term="数学" scheme="http://tsstss123.github.io/tags/%E6%95%B0%E5%AD%A6/"/>
     
   </entry>
   
   <entry>
     <title>BUPT 186 Sasami&#39;s Power</title>
-    <link href="http://www.tansong.top/2016/05/22/BUPT-186-Sasami-s-Power/"/>
-    <id>http://www.tansong.top/2016/05/22/BUPT-186-Sasami-s-Power/</id>
+    <link href="http://tsstss123.github.io/2016/05/22/BUPT-186-Sasami-s-Power/"/>
+    <id>http://tsstss123.github.io/2016/05/22/BUPT-186-Sasami-s-Power/</id>
     <published>2016-05-22T06:44:43.000Z</published>
     <updated>2016-05-22T06:52:21.000Z</updated>
     
@@ -59,14 +59,14 @@
     </summary>
     
     
-      <category term="数学" scheme="http://www.tansong.top/tags/%E6%95%B0%E5%AD%A6/"/>
+      <category term="数学" scheme="http://tsstss123.github.io/tags/%E6%95%B0%E5%AD%A6/"/>
     
   </entry>
   
   <entry>
     <title>CF 658C Bear and Forgotten Tree 3</title>
-    <link href="http://www.tansong.top/2016/04/02/CF-658A/"/>
-    <id>http://www.tansong.top/2016/04/02/CF-658A/</id>
+    <link href="http://tsstss123.github.io/2016/04/02/CF-658A/"/>
+    <id>http://tsstss123.github.io/2016/04/02/CF-658A/</id>
     <published>2016-04-02T14:06:19.000Z</published>
     <updated>2016-05-22T06:52:14.000Z</updated>
     
@@ -83,14 +83,14 @@
     </summary>
     
     
-      <category term="构造" scheme="http://www.tansong.top/tags/%E6%9E%84%E9%80%A0/"/>
+      <category term="构造" scheme="http://tsstss123.github.io/tags/%E6%9E%84%E9%80%A0/"/>
     
   </entry>
   
   <entry>
     <title>HDU 5293 Tree chain problem</title>
-    <link href="http://www.tansong.top/2016/03/14/HDU-5293/"/>
-    <id>http://www.tansong.top/2016/03/14/HDU-5293/</id>
+    <link href="http://tsstss123.github.io/2016/03/14/HDU-5293/"/>
+    <id>http://tsstss123.github.io/2016/03/14/HDU-5293/</id>
     <published>2016-03-14T15:16:47.000Z</published>
     <updated>2016-03-14T15:48:44.000Z</updated>
     
@@ -113,18 +113,18 @@
     </summary>
     
     
-      <category term="HDU" scheme="http://www.tansong.top/tags/HDU/"/>
+      <category term="HDU" scheme="http://tsstss123.github.io/tags/HDU/"/>
     
-      <category term="DFS序" scheme="http://www.tansong.top/tags/DFS%E5%BA%8F/"/>
+      <category term="DFS序" scheme="http://tsstss123.github.io/tags/DFS%E5%BA%8F/"/>
     
-      <category term="DP" scheme="http://www.tansong.top/tags/DP/"/>
+      <category term="DP" scheme="http://tsstss123.github.io/tags/DP/"/>
     
   </entry>
   
   <entry>
     <title>HDU 5296 Annoying problem</title>
-    <link href="http://www.tansong.top/2016/03/14/HDU-5296/"/>
-    <id>http://www.tansong.top/2016/03/14/HDU-5296/</id>
+    <link href="http://tsstss123.github.io/2016/03/14/HDU-5296/"/>
+    <id>http://tsstss123.github.io/2016/03/14/HDU-5296/</id>
     <published>2016-03-14T04:08:14.000Z</published>
     <updated>2016-03-14T15:21:03.000Z</updated>
     
@@ -149,16 +149,16 @@
     </summary>
     
     
-      <category term="HDU" scheme="http://www.tansong.top/tags/HDU/"/>
+      <category term="HDU" scheme="http://tsstss123.github.io/tags/HDU/"/>
     
-      <category term="DFS序" scheme="http://www.tansong.top/tags/DFS%E5%BA%8F/"/>
+      <category term="DFS序" scheme="http://tsstss123.github.io/tags/DFS%E5%BA%8F/"/>
     
   </entry>
   
   <entry>
     <title>C中的scanf与printf</title>
-    <link href="http://www.tansong.top/2016/02/24/C-scanf-printf/"/>
-    <id>http://www.tansong.top/2016/02/24/C-scanf-printf/</id>
+    <link href="http://tsstss123.github.io/2016/02/24/C-scanf-printf/"/>
+    <id>http://tsstss123.github.io/2016/02/24/C-scanf-printf/</id>
     <published>2016-02-24T14:44:46.000Z</published>
     <updated>2016-02-24T14:50:24.000Z</updated>
     
@@ -334,14 +334,14 @@
     </summary>
     
     
-      <category term="C" scheme="http://www.tansong.top/tags/C/"/>
+      <category term="C" scheme="http://tsstss123.github.io/tags/C/"/>
     
   </entry>
   
   <entry>
     <title>UESTC 2016 Winter Training #15</title>
-    <link href="http://www.tansong.top/2016/02/22/UESTC-2016-Winter-Training-15/"/>
-    <id>http://www.tansong.top/2016/02/22/UESTC-2016-Winter-Training-15/</id>
+    <link href="http://tsstss123.github.io/2016/02/22/UESTC-2016-Winter-Training-15/"/>
+    <id>http://tsstss123.github.io/2016/02/22/UESTC-2016-Winter-Training-15/</id>
     <published>2016-02-22T11:53:33.000Z</published>
     <updated>2016-02-22T13:05:21.000Z</updated>
     
@@ -370,14 +370,14 @@
     </summary>
     
     
-      <category term="集训" scheme="http://www.tansong.top/tags/%E9%9B%86%E8%AE%AD/"/>
+      <category term="集训" scheme="http://tsstss123.github.io/tags/%E9%9B%86%E8%AE%AD/"/>
     
   </entry>
   
   <entry>
     <title>Educational Codeforces Round 7</title>
-    <link href="http://www.tansong.top/2016/02/15/Educational-Codeforces-Round-7/"/>
-    <id>http://www.tansong.top/2016/02/15/Educational-Codeforces-Round-7/</id>
+    <link href="http://tsstss123.github.io/2016/02/15/Educational-Codeforces-Round-7/"/>
+    <id>http://tsstss123.github.io/2016/02/15/Educational-Codeforces-Round-7/</id>
     <published>2016-02-15T14:35:34.000Z</published>
     <updated>2016-02-15T14:59:09.000Z</updated>
     
@@ -405,8 +405,8 @@
   
   <entry>
     <title>UESTC 2016 Winter Training #14</title>
-    <link href="http://www.tansong.top/2016/02/15/UESTC-2016-Winter-Training-14/"/>
-    <id>http://www.tansong.top/2016/02/15/UESTC-2016-Winter-Training-14/</id>
+    <link href="http://tsstss123.github.io/2016/02/15/UESTC-2016-Winter-Training-14/"/>
+    <id>http://tsstss123.github.io/2016/02/15/UESTC-2016-Winter-Training-14/</id>
     <published>2016-02-15T13:47:12.000Z</published>
     <updated>2016-02-15T14:32:07.000Z</updated>
     
@@ -433,14 +433,14 @@
     </summary>
     
     
-      <category term="集训" scheme="http://www.tansong.top/tags/%E9%9B%86%E8%AE%AD/"/>
+      <category term="集训" scheme="http://tsstss123.github.io/tags/%E9%9B%86%E8%AE%AD/"/>
     
   </entry>
   
   <entry>
     <title>UESTC 2016 Winter Training #13</title>
-    <link href="http://www.tansong.top/2016/02/14/UESTC-2016-Winter-Training-13/"/>
-    <id>http://www.tansong.top/2016/02/14/UESTC-2016-Winter-Training-13/</id>
+    <link href="http://tsstss123.github.io/2016/02/14/UESTC-2016-Winter-Training-13/"/>
+    <id>http://tsstss123.github.io/2016/02/14/UESTC-2016-Winter-Training-13/</id>
     <published>2016-02-13T17:16:18.000Z</published>
     <updated>2016-02-13T17:32:25.000Z</updated>
     
@@ -462,14 +462,14 @@
     </summary>
     
     
-      <category term="集训" scheme="http://www.tansong.top/tags/%E9%9B%86%E8%AE%AD/"/>
+      <category term="集训" scheme="http://tsstss123.github.io/tags/%E9%9B%86%E8%AE%AD/"/>
     
   </entry>
   
   <entry>
     <title>Wunder Fund Round 2016</title>
-    <link href="http://www.tansong.top/2016/02/05/Wunder-Fund-Round-2016/"/>
-    <id>http://www.tansong.top/2016/02/05/Wunder-Fund-Round-2016/</id>
+    <link href="http://tsstss123.github.io/2016/02/05/Wunder-Fund-Round-2016/"/>
+    <id>http://tsstss123.github.io/2016/02/05/Wunder-Fund-Round-2016/</id>
     <published>2016-02-05T15:18:45.000Z</published>
     <updated>2016-02-05T15:54:04.000Z</updated>
     
@@ -500,8 +500,8 @@
   
   <entry>
     <title>UESTC 2016 Winter Training #12</title>
-    <link href="http://www.tansong.top/2016/02/04/UESTC-2016-Winter-Training-12/"/>
-    <id>http://www.tansong.top/2016/02/04/UESTC-2016-Winter-Training-12/</id>
+    <link href="http://tsstss123.github.io/2016/02/04/UESTC-2016-Winter-Training-12/"/>
+    <id>http://tsstss123.github.io/2016/02/04/UESTC-2016-Winter-Training-12/</id>
     <published>2016-02-04T15:38:43.000Z</published>
     <updated>2016-02-04T16:53:30.000Z</updated>
     
@@ -531,14 +531,14 @@
     </summary>
     
     
-      <category term="集训" scheme="http://www.tansong.top/tags/%E9%9B%86%E8%AE%AD/"/>
+      <category term="集训" scheme="http://tsstss123.github.io/tags/%E9%9B%86%E8%AE%AD/"/>
     
   </entry>
   
   <entry>
     <title>UESTC 2016 Winter Training #11</title>
-    <link href="http://www.tansong.top/2016/02/04/UESTC-2016-Winter-Training-11/"/>
-    <id>http://www.tansong.top/2016/02/04/UESTC-2016-Winter-Training-11/</id>
+    <link href="http://tsstss123.github.io/2016/02/04/UESTC-2016-Winter-Training-11/"/>
+    <id>http://tsstss123.github.io/2016/02/04/UESTC-2016-Winter-Training-11/</id>
     <published>2016-02-04T14:44:14.000Z</published>
     <updated>2016-02-04T16:53:11.000Z</updated>
     
@@ -564,14 +564,14 @@
     </summary>
     
     
-      <category term="集训" scheme="http://www.tansong.top/tags/%E9%9B%86%E8%AE%AD/"/>
+      <category term="集训" scheme="http://tsstss123.github.io/tags/%E9%9B%86%E8%AE%AD/"/>
     
   </entry>
   
   <entry>
     <title>UESTC 2016 Winter Training #10</title>
-    <link href="http://www.tansong.top/2016/01/28/UESTC-2016-Winter-Training-10/"/>
-    <id>http://www.tansong.top/2016/01/28/UESTC-2016-Winter-Training-10/</id>
+    <link href="http://tsstss123.github.io/2016/01/28/UESTC-2016-Winter-Training-10/"/>
+    <id>http://tsstss123.github.io/2016/01/28/UESTC-2016-Winter-Training-10/</id>
     <published>2016-01-28T10:31:56.000Z</published>
     <updated>2016-01-28T10:48:14.000Z</updated>
     
@@ -597,14 +597,14 @@
     </summary>
     
     
-      <category term="集训" scheme="http://www.tansong.top/tags/%E9%9B%86%E8%AE%AD/"/>
+      <category term="集训" scheme="http://tsstss123.github.io/tags/%E9%9B%86%E8%AE%AD/"/>
     
   </entry>
   
   <entry>
     <title>UESTC 2016 Winter Training #9</title>
-    <link href="http://www.tansong.top/2016/01/28/UESTC-2016-Winter-Training-9/"/>
-    <id>http://www.tansong.top/2016/01/28/UESTC-2016-Winter-Training-9/</id>
+    <link href="http://tsstss123.github.io/2016/01/28/UESTC-2016-Winter-Training-9/"/>
+    <id>http://tsstss123.github.io/2016/01/28/UESTC-2016-Winter-Training-9/</id>
     <published>2016-01-27T16:20:56.000Z</published>
     <updated>2016-01-27T17:04:30.000Z</updated>
     
@@ -646,14 +646,14 @@
     </summary>
     
     
-      <category term="集训" scheme="http://www.tansong.top/tags/%E9%9B%86%E8%AE%AD/"/>
+      <category term="集训" scheme="http://tsstss123.github.io/tags/%E9%9B%86%E8%AE%AD/"/>
     
   </entry>
   
   <entry>
     <title>UESTC 2016 Winter Training #8</title>
-    <link href="http://www.tansong.top/2016/01/27/UESTC-2016-Winter-Training-8/"/>
-    <id>http://www.tansong.top/2016/01/27/UESTC-2016-Winter-Training-8/</id>
+    <link href="http://tsstss123.github.io/2016/01/27/UESTC-2016-Winter-Training-8/"/>
+    <id>http://tsstss123.github.io/2016/01/27/UESTC-2016-Winter-Training-8/</id>
     <published>2016-01-27T15:55:53.000Z</published>
     <updated>2016-01-27T16:20:29.000Z</updated>
     
@@ -680,14 +680,14 @@
     </summary>
     
     
-      <category term="集训" scheme="http://www.tansong.top/tags/%E9%9B%86%E8%AE%AD/"/>
+      <category term="集训" scheme="http://tsstss123.github.io/tags/%E9%9B%86%E8%AE%AD/"/>
     
   </entry>
   
   <entry>
     <title>UESTC 2016 Winter Training #6</title>
-    <link href="http://www.tansong.top/2016/01/21/UESTC-2016-Winter-Training-6/"/>
-    <id>http://www.tansong.top/2016/01/21/UESTC-2016-Winter-Training-6/</id>
+    <link href="http://tsstss123.github.io/2016/01/21/UESTC-2016-Winter-Training-6/"/>
+    <id>http://tsstss123.github.io/2016/01/21/UESTC-2016-Winter-Training-6/</id>
     <published>2016-01-21T14:43:40.000Z</published>
     <updated>2016-02-04T16:49:13.000Z</updated>
     
@@ -718,14 +718,14 @@
     </summary>
     
     
-      <category term="集训" scheme="http://www.tansong.top/tags/%E9%9B%86%E8%AE%AD/"/>
+      <category term="集训" scheme="http://tsstss123.github.io/tags/%E9%9B%86%E8%AE%AD/"/>
     
   </entry>
   
   <entry>
     <title>UESTC 2016 Winter Training #5</title>
-    <link href="http://www.tansong.top/2016/01/19/UESTC-2016-Winter-Training-5/"/>
-    <id>http://www.tansong.top/2016/01/19/UESTC-2016-Winter-Training-5/</id>
+    <link href="http://tsstss123.github.io/2016/01/19/UESTC-2016-Winter-Training-5/"/>
+    <id>http://tsstss123.github.io/2016/01/19/UESTC-2016-Winter-Training-5/</id>
     <published>2016-01-19T14:19:02.000Z</published>
     <updated>2016-01-19T15:15:35.000Z</updated>
     
@@ -756,14 +756,14 @@
     </summary>
     
     
-      <category term="集训" scheme="http://www.tansong.top/tags/%E9%9B%86%E8%AE%AD/"/>
+      <category term="集训" scheme="http://tsstss123.github.io/tags/%E9%9B%86%E8%AE%AD/"/>
     
   </entry>
   
   <entry>
     <title>UESTC 2016 Winter Training #4</title>
-    <link href="http://www.tansong.top/2016/01/18/UESTC-2016-Winter-Training-4/"/>
-    <id>http://www.tansong.top/2016/01/18/UESTC-2016-Winter-Training-4/</id>
+    <link href="http://tsstss123.github.io/2016/01/18/UESTC-2016-Winter-Training-4/"/>
+    <id>http://tsstss123.github.io/2016/01/18/UESTC-2016-Winter-Training-4/</id>
     <published>2016-01-18T12:16:15.000Z</published>
     <updated>2016-01-18T15:29:01.000Z</updated>
     
@@ -795,14 +795,14 @@
     </summary>
     
     
-      <category term="集训" scheme="http://www.tansong.top/tags/%E9%9B%86%E8%AE%AD/"/>
+      <category term="集训" scheme="http://tsstss123.github.io/tags/%E9%9B%86%E8%AE%AD/"/>
     
   </entry>
   
   <entry>
     <title>UESTC 2016 Winter Training #3</title>
-    <link href="http://www.tansong.top/2016/01/17/UESTC-2016-Winter-Training-3/"/>
-    <id>http://www.tansong.top/2016/01/17/UESTC-2016-Winter-Training-3/</id>
+    <link href="http://tsstss123.github.io/2016/01/17/UESTC-2016-Winter-Training-3/"/>
+    <id>http://tsstss123.github.io/2016/01/17/UESTC-2016-Winter-Training-3/</id>
     <published>2016-01-17T12:05:06.000Z</published>
     <updated>2016-01-17T12:28:30.000Z</updated>
     
@@ -829,7 +829,7 @@
     </summary>
     
     
-      <category term="集训" scheme="http://www.tansong.top/tags/%E9%9B%86%E8%AE%AD/"/>
+      <category term="集训" scheme="http://tsstss123.github.io/tags/%E9%9B%86%E8%AE%AD/"/>
     
   </entry>
   
