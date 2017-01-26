@@ -53,15 +53,12 @@
 
 
 
-<meta name="description">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Tan Song' Blog">
 <meta property="og:url" content="http://www.tansong.top/page/4/index.html">
 <meta property="og:site_name" content="Tan Song' Blog">
-<meta property="og:description">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Tan Song' Blog">
-<meta name="twitter:description">
 
 
 
@@ -184,6 +181,94 @@
 
       
     
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2015/12/06/CDOJ-574-High-level-ancients-dfs序/" itemprop="url">
+                  CDOJ 574 High-level ancients dfs序
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            发表于
+            <time itemprop="dateCreated" datetime="2015-12-06T21:16:52+08:00" content="2015-12-06">
+              2015-12-06
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2015/12/06/CDOJ-574-High-level-ancients-dfs序/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/12/06/CDOJ-574-High-level-ancients-dfs序/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <h2 id="题意"><a href="#题意" class="headerlink" title="题意"></a>题意</h2><p>给你一颗树,每个节点上有初始值0.操作是在某个节点x上的值+k,然而它的所有儿子的值+k+1,所有孙子的值+k+2..以此类推</p>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2015/12/06/CDOJ-574-High-level-ancients-dfs序/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
 
     
       
@@ -604,7 +689,7 @@
         
           <span itemprop="articleBody">
             
-              <p>gcc内置了三个二进制数统计方面的比较有用的函数,当然不是On级别的<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">__<span class="built_in">builtin</span>_clz();</span><br><span class="line">__<span class="built_in">builtin</span>_ctz();</span><br><span class="line">__<span class="built_in">builtin</span>_popcount();</span><br></pre></td></tr></table></figure></p>
+              <p>gcc内置了三个二进制数统计方面的比较有用的函数,当然不是On级别的<br><figure class="highlight abnf"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">__builtin_clz()<span class="comment">;</span></div><div class="line">__builtin_ctz()<span class="comment">;</span></div><div class="line">__builtin_popcount()<span class="comment">;</span></div></pre></td></tr></table></figure></p>
 <p>若参数是long long 就在函数名后面加ll</p>
 <p>clz是CountLeadingZero,就是统计前导0<br>ctz是CountTrailingZero,就是后面数过去的前导0(不知道该怎么表达了…)</p>
 <p>最有用的就是popcount啦~统计二进制1的个数~几乎是常数时间的消耗</p>
@@ -696,7 +781,7 @@
           <span itemprop="articleBody">
             
               <p>众所周知mac下用的是llvm的编译器…<br>里面没有bits/stdc++可以用…<br>也没有那些喜闻乐见的拓展数据结构…<br>homebrew可以装GNUGcc能省很多事<br>要先把xcode命令行套件装完整(默认的是不完整的…直接装gcc会出乱七八糟的错误)</p>
-<figure class="highlight mipsasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">xcode-select <span class="keyword">install</span><br><span class="line"></span><span class="keyword">brew </span><span class="keyword">install </span>gcc</span><br></pre></td></tr></table></figure>
+<figure class="highlight mipsasm"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">xcode-select <span class="keyword">install</span></div><div class="line"><span class="keyword">brew </span><span class="keyword">install </span>gcc</div></pre></td></tr></table></figure>
             
           </span>
         
@@ -1048,7 +1133,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">39</span>
+              <span class="site-state-item-count">40</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -1115,7 +1200,7 @@
         <div class="copyright" >
   
   &copy; 
-  <span itemprop="copyrightYear">2016</span>
+  <span itemprop="copyrightYear">2017</span>
   <span class="with-love">
     <i class="icon-next-heart fa fa-heart"></i>
   </span>

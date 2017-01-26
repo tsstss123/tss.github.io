@@ -35,7 +35,7 @@
 <link href="/css/main.css?v=0.4.5.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="技巧," />
+  <meta name="keywords" content="数学," />
 
 
 
@@ -53,19 +53,16 @@
 
 
 
-<meta name="description" content="为什么要用Markdown写现在再用Word,PowerPoint什么的就太Low了…最重要的是:公式太难看了公式丑的像屎直接用Latex又太高端了不会啊…怎么办
-鉴于平常使用的 Markdown 是文章神器…就用这个来写吧.">
+<meta name="description" content="让你计算一个很神(tao)奇(lu)的sigma">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Markdown+Pandoc写PDF">
-<meta property="og:url" content="http://www.tansong.top/2015/12/25/Markdown-Pandoc写PDF/index.html">
+<meta property="og:title" content="CDOJ 1397 A Hard-working Girl LRZ">
+<meta property="og:url" content="http://www.tansong.top/2016/05/29/CDOJ-1397-A-Hard-working-Girl-LRZ/index.html">
 <meta property="og:site_name" content="Tan Song' Blog">
-<meta property="og:description" content="为什么要用Markdown写现在再用Word,PowerPoint什么的就太Low了…最重要的是:公式太难看了公式丑的像屎直接用Latex又太高端了不会啊…怎么办
-鉴于平常使用的 Markdown 是文章神器…就用这个来写吧.">
-<meta property="og:updated_time" content="2016-01-09T14:08:11.000Z">
+<meta property="og:description" content="让你计算一个很神(tao)奇(lu)的sigma">
+<meta property="og:updated_time" content="2017-01-26T01:54:22.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Markdown+Pandoc写PDF">
-<meta name="twitter:description" content="为什么要用Markdown写现在再用Word,PowerPoint什么的就太Low了…最重要的是:公式太难看了公式丑的像屎直接用Latex又太高端了不会啊…怎么办
-鉴于平常使用的 Markdown 是文章神器…就用这个来写吧.">
+<meta name="twitter:title" content="CDOJ 1397 A Hard-working Girl LRZ">
+<meta name="twitter:description" content="让你计算一个很神(tao)奇(lu)的sigma">
 
 
 
@@ -77,7 +74,7 @@
   };
 </script>
 
-  <title> Markdown+Pandoc写PDF | Tan Song' Blog </title>
+  <title> CDOJ 1397 A Hard-working Girl LRZ | Tan Song' Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -197,7 +194,7 @@
             
             
               
-                Markdown+Pandoc写PDF
+                CDOJ 1397 A Hard-working Girl LRZ
               
             
           </h1>
@@ -206,8 +203,8 @@
         <div class="post-meta">
           <span class="post-time">
             发表于
-            <time itemprop="dateCreated" datetime="2015-12-25T13:00:08+08:00" content="2015-12-25">
-              2015-12-25
+            <time itemprop="dateCreated" datetime="2016-05-29T14:40:27+08:00" content="2016-05-29">
+              2016-05-29
             </time>
           </span>
 
@@ -217,8 +214,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2015/12/25/Markdown-Pandoc写PDF/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/12/25/Markdown-Pandoc写PDF/" itemprop="commentsCount"></span>
+                <a href="/2016/05/29/CDOJ-1397-A-Hard-working-Girl-LRZ/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/05/29/CDOJ-1397-A-Hard-working-Girl-LRZ/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -237,36 +234,9 @@
       
 
       
-        <span itemprop="articleBody"><h2 id="为什么要用Markdown写"><a href="#为什么要用Markdown写" class="headerlink" title="为什么要用Markdown写"></a>为什么要用Markdown写</h2><p>现在再用Word,PowerPoint什么的就太Low了…<br>最重要的是:<br><strong>公式太难看了</strong><br><strong>公式丑的像屎</strong><br>直接用Latex又太高端了不会啊…怎么办</p>
-<p>鉴于平常使用的 Markdown 是文章神器…就用这个来写吧.<br><a id="more"></a></p>
-<blockquote>
-<p>插一条内容~发现了一个新的神器…请拉到最下看…</p>
-</blockquote>
-<p>然后就发现了一款神器-Pandoc是Haskell写出来的神器…话说知道Haskell这门艺术一般的语言这么久了…这是第一次发现这语言还有这么牛逼的作品,醉了…</p>
-<p>Pandoc支持几乎所有的开源文字格式,支持Win/OSX/Linux..6的飞起,就是运行起来感觉稍稍有点慢(毕竟Haskell写出来的)</p>
-<p>最重要的是:直接支持<strong>Latex</strong>的编译和内嵌公式,给Markdown写作增添了无穷威力!<br>Pandoc支持md-&gt;tex(can use template)-&gt;pdf,所以可以使用markdown+latex混写的写作方式,最后生成pdf…新手可以什么都不用管直接套版,老手可以避开latex中恼人的设置<strong>专注于写作</strong></p>
-<blockquote>
-<p>给人感觉:专注于写作就是Markdown存在的真正意义,无论用来做什么事情</p>
-</blockquote>
-<p>再提一下PPT…Pandoc原生支持Beamer!!!只要带上参数就能直接调用Beamer自带的那些逼格报表的模板</p>
-<p>Pandoc的Markdown语法与标准Md语法略有差别,最主要的区别是:换行用一个空行表示.其他比较牛逼的拓展就是支持表格(包括居左居中居右)</p>
-<h2 id="如何使用Pandoc-Beamer"><a href="#如何使用Pandoc-Beamer" class="headerlink" title="如何使用Pandoc+Beamer"></a>如何使用Pandoc+Beamer</h2><p>正如使用Latex一样…首先要让套件支持中文<br><code>pandoc -D beamer &gt; beamer-template.tex</code><br>先导出默认模板<br>在\ifxetex后面加入对中文的支持<br><figure class="highlight tex"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="tag">\<span class="name">usepackage</span><span class="string">&#123;xeCJK&#125;</span></span>                 <span class="comment">% 设置中英文字体</span></div><div class="line"><span class="tag">\<span class="name">setCJKmainfont</span><span class="string">&#123;SimHei&#125;</span></span> <span class="comment">% 中文字体</span></div><div class="line"><span class="tag">\<span class="name">setmainfont</span><span class="string">&#123;Arial&#125;</span></span>                <span class="comment">% 英文字体</span></div><div class="line"><span class="tag">\<span class="name">setromanfont</span><span class="string">&#123;Courier New&#125;</span></span></div><div class="line"><span class="tag">\<span class="name">setmonofont</span><span class="string">&#123;Courier New&#125;</span></span></div><div class="line"><span class="tag">\<span class="name">linespread</span><span class="string">&#123;1.2&#125;</span></span><span class="tag">\<span class="name">selectfont</span></span>        <span class="comment">% 行距</span></div><div class="line"><span class="tag">\<span class="name">XeTeXlinebreaklocale</span></span> "zh"         <span class="comment">% 中文自动换行</span></div><div class="line"><span class="tag">\<span class="name">XeTeXlinebreakskip</span> = <span class="number">0pt</span></span> plus 1pt <span class="comment">% 字之间加0pt至1pt间距</span></div><div class="line"><span class="tag">\<span class="name">parindent</span></span> 0em                     <span class="comment">% 段缩进</span></div><div class="line"><span class="tag">\<span class="name">setlength</span><span class="string">&#123;\parskip&#125;</span><span class="string">&#123;20pt&#125;</span></span>         <span class="comment">% 段间距</span></div></pre></td></tr></table></figure></p>
-<p>这里容易出问题的就是<code>\setCJKmainfont{SimHei}</code>设置字体上.由于Win\Linux\OSX上的字体各不相同所以必须自己调整.<br>很操蛋的一件事情就是:生成时报错信息是几乎没有的,需要自己去.log里面看</p>
-<blockquote>
-<p>使用命令<code>fc-list</code>可以打出已经安装的所有字体</p>
-</blockquote>
-<h2 id="如何插入公式"><a href="#如何插入公式" class="headerlink" title="如何插入公式"></a>如何插入公式</h2><p>行内用法:<br>\$Tex公式\$<br>独立成行用法:<br>\$\$Tex公式\$\$</p>
-<h2 id="混写的实用技巧"><a href="#混写的实用技巧" class="headerlink" title="混写的实用技巧"></a>混写的实用技巧</h2><h3 id="设置页面比例"><a href="#设置页面比例" class="headerlink" title="设置页面比例"></a>设置页面比例</h3><p>在模板文件的documentclass中(一般在第一行)加参数<br>例-Pandoc的默认模板:<br><figure class="highlight gams"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">\documentclass[<span class="symbol">$</span><span class="keyword">if</span>(fontsize)<span class="symbol">$</span><span class="symbol">$</span>fontsize<span class="symbol">$</span>,<span class="symbol">$</span>endif<span class="symbol">$</span><span class="symbol">$</span><span class="keyword">if</span>(handout)<span class="symbol">$</span>handout,<span class="symbol">$</span>endif<span class="symbol">$</span><span class="symbol">$</span><span class="keyword">if</span>(beamer)<span class="symbol">$</span>ignorenonframetext,<span class="symbol">$</span>endif<span class="symbol">$</span><span class="symbol">$</span><span class="keyword">for</span>(classoption)<span class="symbol">$</span><span class="symbol">$</span>classoption<span class="symbol">$</span><span class="symbol">$</span>sep<span class="symbol">$</span>,<span class="symbol">$</span>endfor<span class="symbol">$</span>]&#123;<span class="symbol">$</span>documentclass<span class="symbol">$</span>&#125;</div></pre></td></tr></table></figure></p>
-<p>在[]内最后加上<code>,aspectratio=169</code><br>即可设置页面比例为16:9(默认为4:3)。<br>设置比例为16:10同理</p>
-<h3 id="设置背景图片"><a href="#设置背景图片" class="headerlink" title="设置背景图片"></a>设置背景图片</h3><p>在模板文件中加入命令<br><code>\usebackgroundtemplate{\includegraphics[width=\paperwidth, height=\paperheight]{background.png}}</code></p>
-<p>如果要对标题页单独设置背景<br><figure class="highlight tex"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="tag">\<span class="name">RequirePackage</span><span class="string">&#123;tikz&#125;</span></span></div><div class="line"><span class="tag">\<span class="name">addtobeamertemplate</span><span class="string">&#123;title page&#125;</span><span class="string">&#123;%</span></span></div><div class="line">    \begin&#123;tikzpicture&#125;<span class="string">[remember picture,overlay]</span></div><div class="line">        <span class="tag">\<span class="name">node</span></span> [xshift=0cm,yshift=0cm] at (current page.center)</div><div class="line">            &#123;<span class="tag">\<span class="name">includegraphics</span><span class="string">[width=\paperwidth, height=\paperheight]</span><span class="string">&#123;background_title.png&#125;</span></span>&#125;;</div><div class="line">    <span class="tag">\<span class="name">end</span><span class="string">&#123;tikzpicture&#125;</span></span><span class="comment">%</span></div><div class="line">&#125;&#123;&#125;</div></pre></td></tr></table></figure></p>
-<h2 id="深入学习1"><a href="#深入学习1" class="headerlink" title="深入学习1"></a>深入学习1</h2><p><a href="http://www.zhihu.com/question/21088362" target="_blank" rel="external">如何使用LaTeX让自己不乱？知乎</a><br><a href="http://tex.stackexchange.com/questions/51457/can-i-specify-title-page-customization-in-a-template-instead-of-my-document" target="_blank" rel="external">PPT背景问题</a><br><a href="https://github.com/larrycai/kaiyuanbook" target="_blank" rel="external">Github开源书教程</a><br><a href="http://elegantlatex.org/" target="_blank" rel="external">ElegantLatex(Latex.Beamer)</a><br><a href="http://kevinyoung.gitcafe.io/articles/latex/pandoc_markdown_pdf.html" target="_blank" rel="external">Pandoc使用</a></p>
-<h2 id="深入学习2"><a href="#深入学习2" class="headerlink" title="深入学习2"></a>深入学习2</h2><p>无意中又看了一些帖子涨了很多MD的姿势啊<br><a href="http://www.jianshu.com/p/17fdcf17bbb4" target="_blank" rel="external">MD让书写更美好</a><br><a href="http://afoo.me/posts/2013-07-10-how-to-transform-chinese-pdf-with-pandoc.html" target="_blank" rel="external">pandoc中文pdf转换攻略</a><br><a href="https://gist.github.com/fangpeishi/5cc11fa503f1e9eda2c1" target="_blank" rel="external">一份更好的PDF版(PPT没试过)</a><br><a href="http://www.douban.com/review/7317179/" target="_blank" rel="external">豆瓣资料(上面版的链接)</a><br><a href="https://github.com/adamzap/landslide" target="_blank" rel="external">一个看起来不错的HTMLPPT-Landslides</a><br><a href="http://www.jianshu.com/p/e063303317cb" target="_blank" rel="external">简书上对Landslides的说明</a><br><a href="https://github.com/tzengyuxio/pages" target="_blank" rel="external">PandocMD语法翻译</a><br><a href="https://github.com/ksky521/nodePPT" target="_blank" rel="external">国货PPT看起来很牛逼</a></p>
-<p>还有Mac下的PPT<br><a href="http://www.jianshu.com/p/b66e091565da" target="_blank" rel="external">Deckset简书的介绍</a></p>
-<p><a href="https://github.com/justjavac/free-programming-books-zh_CN" target="_blank" rel="external">开源书大全</a></p>
-<h2 id="新的神器"><a href="#新的神器" class="headerlink" title="新的神器!!"></a>新的神器!!</h2><p>2016-01-09更新</p>
-<p>发现一个新的神器<a href="https://www.madoko.net" target="_blank" rel="external">戳这里!</a></p>
-<p>知乎上的介绍在这<a href="https://www.zhihu.com/question/19637157/answer/78063239" target="_blank" rel="external">madoko</a></p>
+        <span itemprop="articleBody"><p>让你计算一个很神(tao)奇(lu)的sigma</p>
+<a id="more"></a>
+<figure class="highlight axapta"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#include &lt;cassert&gt;</span></div><div class="line"><span class="meta">#include &lt;cstdio&gt;</span></div><div class="line"><span class="meta">#include &lt;iostream&gt;</span></div><div class="line">using namespace std;</div><div class="line">const <span class="keyword">long</span> <span class="keyword">long</span> <span class="keyword">mod</span> = <span class="number">1000000009</span>;</div><div class="line">typedef <span class="keyword">long</span> <span class="keyword">long</span> <span class="keyword">int</span> ll;</div><div class="line"><span class="keyword">void</span> extend_gcd(ll a, ll b, ll &amp;d, ll &amp;x, ll &amp;y) &#123;</div><div class="line">    <span class="keyword">if</span> (!b)</div><div class="line">        d = a, x = <span class="number">1</span>, y = <span class="number">0</span>;</div><div class="line">    <span class="keyword">else</span> &#123;</div><div class="line">        extend_gcd(b, a % b, d, y, x);</div><div class="line">        y -= x * (a / b);</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line">ll inv(ll a, ll <span class="keyword">mod</span>) <span class="comment">//计算a对mod的逆元</span></div><div class="line">&#123;</div><div class="line">    ll d, x, y;</div><div class="line">    extend_gcd(a, <span class="keyword">mod</span>, d, x, y);</div><div class="line">    ll ret = (d == <span class="number">1</span> ? (x + <span class="keyword">mod</span>) % <span class="keyword">mod</span> : <span class="number">-1</span>);</div><div class="line">    assert(ret &gt; <span class="number">0</span>);</div><div class="line">    <span class="keyword">return</span> ret;</div><div class="line">&#125;</div><div class="line">ll cpre[<span class="number">1001000</span>];</div><div class="line"><span class="keyword">void</span> combine1(ll n, ll <span class="keyword">mod</span>) <span class="comment">//计算组合C(n,m)%mod</span></div><div class="line">&#123;</div><div class="line">    ll <span class="keyword">sum</span> = <span class="number">1</span>; <span class="comment">//线性计算</span></div><div class="line">    cpre[<span class="number">0</span>] = <span class="number">1</span>;</div><div class="line">    <span class="keyword">for</span> (ll i = <span class="number">1</span>, j = n; i &lt;= n; i++, j--) &#123;</div><div class="line">        <span class="keyword">sum</span> = (<span class="keyword">sum</span> * j) % <span class="keyword">mod</span> * inv(i, <span class="keyword">mod</span>) % <span class="keyword">mod</span>;</div><div class="line">        cpre[i] = <span class="keyword">sum</span>;</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line">ll Pow(ll a, ll p, ll <span class="keyword">mod</span>) &#123;</div><div class="line">    <span class="keyword">if</span> (p == <span class="number">0</span>)</div><div class="line">        <span class="keyword">return</span> <span class="number">1</span>LL;</div><div class="line">    <span class="keyword">if</span> (p == <span class="number">1</span>)</div><div class="line">        <span class="keyword">return</span> a;</div><div class="line">    ll tmp = Pow(a, p / <span class="number">2</span>, <span class="keyword">mod</span>);</div><div class="line">    tmp = (tmp * tmp) % <span class="keyword">mod</span>;</div><div class="line">    <span class="keyword">if</span> (p % <span class="number">2</span>)</div><div class="line">        tmp = tmp * a % <span class="keyword">mod</span>;</div><div class="line">    <span class="keyword">return</span> tmp;</div><div class="line">&#125;</div><div class="line">ll S(ll A, ll B, ll C, ll n, <span class="keyword">int</span> k) &#123;</div><div class="line">    ll ans = <span class="number">0</span>;</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt;= k; ++j) &#123;</div><div class="line">        ll d = Pow(A, (k - j), <span class="keyword">mod</span>) * Pow(B, j, <span class="keyword">mod</span>) % <span class="keyword">mod</span>;</div><div class="line">        ll f = ((j % <span class="number">2</span> == <span class="number">0</span>) ? <span class="number">1</span> : <span class="number">-1</span>);</div><div class="line">        ll di = <span class="number">0</span>;</div><div class="line">        <span class="keyword">if</span> (d * d % <span class="keyword">mod</span> == <span class="number">1</span>) &#123;</div><div class="line">            di = (n * d) % <span class="keyword">mod</span>;</div><div class="line">        &#125; <span class="keyword">else</span> &#123;</div><div class="line">            di = (Pow(d, <span class="number">2</span> * n + <span class="number">1</span>, <span class="keyword">mod</span>) - d + <span class="keyword">mod</span>) *</div><div class="line">                 inv(d * d - <span class="number">1</span> + <span class="keyword">mod</span>, <span class="keyword">mod</span>) % <span class="keyword">mod</span>;</div><div class="line">        &#125;</div><div class="line">        ll th = f * di % <span class="keyword">mod</span>;</div><div class="line">        ans = ((ans + cpre[j] * th) % <span class="keyword">mod</span> + <span class="keyword">mod</span>) % <span class="keyword">mod</span>;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">return</span> (Pow(C, k, <span class="keyword">mod</span>) * ans) % <span class="keyword">mod</span>;</div><div class="line">&#125;</div><div class="line">ll C = <span class="number">276601605</span>LL, A = <span class="number">691504013</span>LL, B = <span class="number">308495997</span>LL;</div><div class="line"><span class="keyword">int</span> main() &#123;</div><div class="line">    <span class="keyword">int</span> n, k;</div><div class="line">    scanf(<span class="string">"%d%d"</span>, &amp;n, &amp;k);</div><div class="line">    combine1(k, <span class="keyword">mod</span>);</div><div class="line">    cout &lt;&lt; S(A, B, C, n, k) &lt;&lt; endl;</div><div class="line">    <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div><div class="line"><span class="comment">// a(n) = (phi^(2n-1)+phi^(1-2n))/sqrt(5) where phi=(1+sqrt(5))/2.</span></div><div class="line"><span class="comment">// 276601605*(691504013^(2*n-1) + 691504013^(1-2*n))</span></div></pre></td></tr></table></figure>
 </span>
       
     </div>
@@ -275,7 +245,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/技巧/" rel="tag">#技巧</a>
+            <a href="/tags/数学/" rel="tag">#数学</a>
           
         </div>
       
@@ -284,17 +254,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2015/12/12/SPOJ-COT-可持久化平衡树-主席树/" rel="next" title="SPOJ COT 可持久化平衡树/主席树">
-                <i class="fa fa-chevron-left"></i> SPOJ COT 可持久化平衡树/主席树
+              <a href="/2016/05/22/BUPT-186-Sasami-s-Power/" rel="next" title="BUPT 186 Sasami's Power">
+                <i class="fa fa-chevron-left"></i> BUPT 186 Sasami's Power
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2015/12/27/孤独的本质/" rel="prev" title="孤独的本质 | 如何解决孤独的痛苦，走向心智的成熟">
-                孤独的本质 | 如何解决孤独的痛苦，走向心智的成熟 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -321,8 +287,8 @@
         
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2015/12/25/Markdown-Pandoc写PDF/"
-           data-title="Markdown+Pandoc写PDF" data-url="http://www.tansong.top/2015/12/25/Markdown-Pandoc写PDF/">
+      <div class="ds-thread" data-thread-key="2016/05/29/CDOJ-1397-A-Hard-working-Girl-LRZ/"
+           data-title="CDOJ 1397 A Hard-working Girl LRZ" data-url="http://www.tansong.top/2016/05/29/CDOJ-1397-A-Hard-working-Girl-LRZ/">
       </div>
     
   </div>
@@ -429,7 +395,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#为什么要用Markdown写"><span class="nav-number">1.</span> <span class="nav-text">为什么要用Markdown写</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#如何使用Pandoc-Beamer"><span class="nav-number">2.</span> <span class="nav-text">如何使用Pandoc+Beamer</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#如何插入公式"><span class="nav-number">3.</span> <span class="nav-text">如何插入公式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#混写的实用技巧"><span class="nav-number">4.</span> <span class="nav-text">混写的实用技巧</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#设置页面比例"><span class="nav-number">4.1.</span> <span class="nav-text">设置页面比例</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#设置背景图片"><span class="nav-number">4.2.</span> <span class="nav-text">设置背景图片</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#深入学习1"><span class="nav-number">5.</span> <span class="nav-text">深入学习1</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#深入学习2"><span class="nav-number">6.</span> <span class="nav-text">深入学习2</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#新的神器"><span class="nav-number">7.</span> <span class="nav-text">新的神器!!</span></a></li></ol></div>
+              <p class="post-toc-empty">此文章未包含目录</p>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
